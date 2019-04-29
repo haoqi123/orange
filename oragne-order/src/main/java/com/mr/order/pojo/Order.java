@@ -6,6 +6,7 @@ package com.mr.order.pojo;
 
 public class Order {
     public static void main(String[] args) {
-
+        System.out.println();
     }
+
 }
