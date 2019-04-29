@@ -84,7 +84,7 @@ create table t_commodity
 (
    t_commodity_id       int not null auto_increment comment '商品主键',
    gt_id                int not null comment '类目id',
-   c_goods_sn           int not null comment '商品编号',
+   c_goods_sn           int not NULL unique comment '商品编号',
    c_name               varchar(200) not null comment '商品名称',
    c_counter_price      decimal(10,2) not null comment '专柜价格',
    c_retail_price       decimal(10,2) not null comment '当前价格',
@@ -122,7 +122,7 @@ alter table t_feet comment '用户足迹表';
 create table t_goodsType
 (
    t_goodsType_id       int not null auto_increment comment '主键',
-   gt_id                int not null comment '类目id',
+   gt_id                int not null unique comment '类目id',
    gt_name              varchar(20) not null comment '类目名',
    gt_iconUrl           varchar(255) not null comment '类目图标',
    gt_picUrl            varchar(255) not null comment '类目图片',
@@ -189,7 +189,7 @@ create table t_order
 (
    order_id             int not null auto_increment comment '订单主键',
    `user_id`              int not null comment '用户编号',
-   order_no             int not null comment '订单编号',
+   order_no             int not null unique comment '订单编号',
    order_postage        double(5,2) not null comment '邮费',
    order_money          double(10,2) not null comment '总金额',
    order_ganeration_time timestamp not null DEFAULT CURRENT_TIMESTAMP comment '订单生成时间',
@@ -252,7 +252,7 @@ alter table t_pic comment '图片表';
 create table t_quan
 (
    t_quan_id            int not null auto_increment comment '主键',
-   q_id                 int not null comment '优惠券id',
+   q_id                 int not null unique comment '优惠券id',
    q_name               varchar(20) not null comment '优惠券名称',
    q_desc               varchar(255) not null comment '介绍',
    q_tag                int not null comment '标签',
@@ -262,8 +262,8 @@ create table t_quan
    q_about              int not null comment '商品使用范围',
    q_type               int not null comment '优惠券类型',
    q_status             int not null comment '状态',
-   q_createTime         timestamp not null comment '开始时间',
-   q_endTIme            timestamp not null comment '结束时间',
+   q_createTime         timestamp  null comment '开始时间',
+   q_endTIme            timestamp  null comment '结束时间',
    q_number             int not null comment '优惠券数量',
    primary key (t_quan_id)
 );
@@ -279,8 +279,8 @@ create table t_seckill
    c_goods_sn           int not null comment '商品主键',
    sk_name              varchar(20) not null comment '活动名称',
    sk_createTime        timestamp not null DEFAULT CURRENT_TIMESTAMP comment '创建时间',
-   sk_startTime         timestamp not null comment '活动开始时间',
-   sk_endTime           timestamp comment '结束时间',
+   sk_startTime         timestamp null comment '活动开始时间',
+   sk_endTime           timestamp null comment '结束时间',
    sk_number            int not null,
    primary key (t_seckill_id)
 );
@@ -293,7 +293,7 @@ alter table t_seckill comment '秒杀活动表';
 create table t_user
 (
    t_user_id            int not null auto_increment,
-   `user_id`            int not null comment '用户编号',
+   `user_id`            int not null unique comment '用户编号',
    `user_name`          varchar(20) not null comment '用户名',
    user_phone           varchar(11) not null comment '手机号',
    user_sex             int not null,
@@ -343,7 +343,7 @@ create table t_userquan
    q_id                 int not null comment '主键',
    userquan_status      int not null,
    userquan_addtime     timestamp not null DEFAULT CURRENT_TIMESTAMP comment '领取时间',
-   userquan_updatetime  timestamp comment '使用时间',
+   userquan_updatetime  timestamp NULL comment '使用时间',
    primary key (t_userquan)
 );
 
@@ -367,56 +367,56 @@ alter table t_car add constraint FK_Reference_18 foreign key (t_usercar_id)
       references t_usercar (t_usercar_id) on delete restrict on update restrict;
 
 alter table t_car add constraint FK_Reference_20 foreign key (c_goods_sn)
-      references t_commodity (t_commodity_id) on delete restrict on update restrict;
+      references t_commodity (c_goods_sn) on delete restrict on update restrict;
 
 alter table t_comment add constraint FK_Reference_13 foreign key (c_goods_sn)
-      references t_commodity (t_commodity_id) on delete restrict on update restrict;
+      references t_commodity (c_goods_sn) on delete restrict on update restrict;
 
 alter table t_commodity add constraint FK_Reference_4 foreign key (gt_id)
-      references t_goodsType (t_goodsType_id) on delete restrict on update restrict;
+      references t_goodsType (gt_id) on delete restrict on update restrict;
 
 alter table t_feet add constraint FK_Reference_1 foreign key (`user_id`)
-      references t_user (t_user_id) on delete restrict on update restrict;
+      references t_user (`user_id`) on delete restrict on update restrict;
 
 alter table t_feet add constraint FK_Reference_21 foreign key (c_goods_sn)
-      references t_commodity (t_commodity_id) on delete restrict on update restrict;
+      references t_commodity (c_goods_sn) on delete restrict on update restrict;
 
 alter table t_logistics add constraint FK_Reference_8 foreign key (order_no)
-      references t_order (order_id) on delete restrict on update restrict;
+      references t_order (order_no) on delete restrict on update restrict;
 
 alter table t_logs add constraint FK_Reference_14 foreign key (t_master_id)
       references t_master (t_master_id) on delete restrict on update restrict;
 
 alter table t_order add constraint FK_Reference_10 foreign key (`user_id`)
-      references t_user (t_user_id) on delete restrict on update restrict;
+      references t_user (`user_id`) on delete restrict on update restrict;
 
 alter table t_order_goods add constraint FK_Reference_12 foreign key (c_goods_sn)
-      references t_commodity (t_commodity_id) on delete restrict on update restrict;
+      references t_commodity (c_goods_sn) on delete restrict on update restrict;
 
 alter table t_order_goods add constraint FK_Reference_9 foreign key (order_no)
-      references t_order (order_id) on delete restrict on update restrict;
+      references t_order (order_no) on delete restrict on update restrict;
 
 alter table t_parameter add constraint FK_Reference_17 foreign key (c_goods_sn)
-      references t_commodity (t_commodity_id) on delete restrict on update restrict;
+      references t_commodity (c_goods_sn) on delete restrict on update restrict;
 
 alter table t_pic add constraint FK_Reference_16 foreign key (c_goods_sn)
-      references t_commodity (t_commodity_id) on delete restrict on update restrict;
+      references t_commodity (c_goods_sn) on delete restrict on update restrict;
 
 alter table t_seckill add constraint FK_Reference_5 foreign key (c_goods_sn)
-      references t_commodity (t_commodity_id) on delete restrict on update restrict;
+      references t_commodity (c_goods_sn) on delete restrict on update restrict;
 
 alter table t_useraddress add constraint FK_Reference_11 foreign key (`user_id`)
-      references t_user (t_user_id) on delete restrict on update restrict;
+      references t_user (`user_id`) on delete restrict on update restrict;
 
 alter table t_useraddress add constraint FK_Reference_15 foreign key (qu_id)
       references t_xzqy (t_xzqy_id) on delete restrict on update restrict;
 
 alter table t_usercar add constraint FK_Reference_19 foreign key (`user_id`)
-      references t_user (t_user_id) on delete restrict on update restrict;
+      references t_user (`user_id`) on delete restrict on update restrict;
 
 alter table t_userquan add constraint FK_Reference_6 foreign key (`user_id`)
-      references t_user (t_user_id) on delete restrict on update restrict;
+      references t_user (`user_id`) on delete restrict on update restrict;
 
 alter table t_userquan add constraint FK_Reference_7 foreign key (q_id)
-      references t_quan (t_quan_id) on delete restrict on update restrict;
+      references t_quan (q_id) on delete restrict on update restrict;
 
