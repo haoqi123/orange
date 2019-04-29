@@ -52,8 +52,8 @@ create table t_car
    t_usercar_id         int not null comment '主键',
    c_information varchar(255) not null comment '商品信息',
    c_unit_price         decimal(10,2) not null comment '单价',
-   c_number             int not null,
-   c_createTime         timestamp not null DEFAULT CURRENT_TIMESTAMP,
+   c_number             int not null comment '数量',
+   c_createTime         timestamp not null DEFAULT CURRENT_TIMESTAMP comment '加入时间',
    primary key (c_id)
 );
 
@@ -108,7 +108,7 @@ alter table t_commodity comment '商品管理表';
 create table t_feet
 (
    t_feet_id            int not null comment '主键',
-   `user_id`              int not null,
+   `user_id`              int not null comment '用户编号',
    c_goods_sn           int not null comment '商品主键',
    f_createTime         timestamp not null DEFAULT CURRENT_TIMESTAMP comment '添加时间',
    primary key (t_feet_id)
@@ -222,7 +222,7 @@ alter table t_order_goods comment '订单介绍';
 /*==============================================================*/
 create table t_parameter
 (
-   p_id                 int not null auto_increment,
+   p_id                 int not null auto_increment comment '主键',
    c_goods_sn           int not null comment '商品主键',
    p_name               varchar(255) not null comment '商品参数名称',
    p_value              varchar(255) not null comment '商品参数值',
@@ -238,7 +238,7 @@ create table t_pic
 (
    t_pic_id             int not null auto_increment comment '主键',
    c_goods_sn           int not null comment '商品id',
-   pic_url              varchar(255) not null,
+   pic_url              varchar(255) not null comment '图片地址',
    pic_type             int not null comment '图片类型',
    pic_addTime          timestamp not null DEFAULT CURRENT_TIMESTAMP comment '加入时间',
    primary key (t_pic_id)
@@ -281,7 +281,7 @@ create table t_seckill
    sk_createTime        timestamp not null DEFAULT CURRENT_TIMESTAMP comment '创建时间',
    sk_startTime         timestamp null comment '活动开始时间',
    sk_endTime           timestamp null comment '结束时间',
-   sk_number            int not null,
+   sk_number            int not null comment '数量',
    primary key (t_seckill_id)
 );
 
@@ -292,11 +292,11 @@ alter table t_seckill comment '秒杀活动表';
 /*==============================================================*/
 create table t_user
 (
-   t_user_id            int not null auto_increment,
+   t_user_id            int not null auto_increment comment '主键',
    `user_id`            int not null unique comment '用户编号',
    `user_name`          varchar(20) not null comment '用户名',
    user_phone           varchar(11) not null comment '手机号',
-   user_sex             int not null,
+   user_sex             int not null comment '性别',
    user_birthday        date not null comment '生日',
    user_level           int not null comment '用户等级',
    user_status          int not null comment '状态',
@@ -311,8 +311,8 @@ alter table t_user comment '会员表';
 create table t_useraddress
 (
    t_useraddress_id     int not null comment '主键',
-   `user_id`            int not null,
-   qu_id                int not null comment '主键',
+   `user_id`            int not null comment '用户编号',
+   qu_id                int not null comment '地址编号',
    us_name              varchar(20) not null comment '收货人名称',
    us_phone             varchar(11) not null comment '收货地址手机号',
    us_status            int not null comment '是否默认',
@@ -327,7 +327,7 @@ alter table t_useraddress comment '收货地址表';
 create table t_usercar
 (
    t_usercar_id         int not null auto_increment comment '主键',
-   `user_id`              int,
+   `user_id`              int comment '用户id',
    primary key (t_usercar_id)
 );
 
@@ -339,9 +339,9 @@ alter table t_usercar comment '用户的购物车';
 create table t_userquan
 (
    t_userquan           int not null auto_increment comment '主键',
-   `user_id`              int not null,
-   q_id                 int not null comment '主键',
-   userquan_status      int not null,
+   `user_id`              int not null comment '用户id',
+   q_id                 int not null comment '优惠券id',
+   userquan_status      int not null comment '使用状态',
    userquan_addtime     timestamp not null DEFAULT CURRENT_TIMESTAMP comment '领取时间',
    userquan_updatetime  timestamp NULL comment '使用时间',
    primary key (t_userquan)
