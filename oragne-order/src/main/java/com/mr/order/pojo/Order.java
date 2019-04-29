@@ -6,6 +6,8 @@ package com.mr.order.pojo;
 
 public class Order {
     public static void main(String[] args) {
+        for (int i =1;i<=9;i++){
 
+        }
     }
 }
