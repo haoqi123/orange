@@ -16,7 +16,6 @@
         <module>orange-loggin</module>
         <module>orange-manager</module>
         <module>orange-search</module>
-        <module>orange-utils</module>
         <module>orange-web</module>
     </modules>
     <groupId>com.mr</groupId>
