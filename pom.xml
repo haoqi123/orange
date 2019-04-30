@@ -16,7 +16,6 @@
         <module>orange-loggin</module>
         <module>orange-manager</module>
         <module>orange-search</module>
-        <module>orange-utils</module>
         <module>orange-web</module>
     </modules>
     <groupId>com.mr</groupId>
@@ -30,7 +29,11 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>com.mr</groupId>
+            <artifactId>orange-utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -45,6 +48,15 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
             <version>2.1.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-solr</artifactId>
         </dependency>
         <!-- redis客户端Jar
         <dependency>
@@ -62,7 +74,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.9.7</version>
+            <version>2.9.8</version>
         </dependency>
         &lt;!&ndash;druid数据库连接池&ndash;&gt;
         <dependency>
@@ -76,16 +88,13 @@
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
         &lt;!&ndash;实体类需要&ndash;&gt;
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>-->
+
     </dependencies>
 
 
