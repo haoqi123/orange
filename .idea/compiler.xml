@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="oragne-order" />
-        <module name="orange" />
         <module name="orange-car" />
         <module name="orange-eureka" />
         <module name="orange-feign" />
