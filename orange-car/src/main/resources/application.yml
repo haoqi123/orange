@@ -1,5 +1,5 @@
-#server:
-  #port: 8088
+server:
+  port: 8088
 
 spring:
   devtools:
@@ -9,53 +9,43 @@ spring:
   datasource:
     username: root
     password: 7777
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://62.234.49.33:3306/haoqi?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
     #druid \uFFFD\uFFFD\uFFFD\u077F\uFFFD\uFFFD\uFFFD\uFFFD\u04F3\uFFFD
     type: com.alibaba.druid.pool.DruidDataSource
   #reids \uFFFD\uFFFD\uFFFD\uFFFD
-  redis:
-    timeout: 1000
-    database: 0
-    host: 127.0.0.1
-    port: 6380
-    password: lzm
-    pool:
-      max-active: 200
-      max-wait: -1
-      max-idle: 10
-      min-idle: 0
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: orange
-      password: lzm
-  rabbitmq:
-    host: 127.0.0.1
-    port: 5672
-    username: lzm
-    password: lzm
+#  redis:
+#    timeout: 1000
+#    database: 0
+#    host: 127.0.0.1
+#    port: 6380
+#    password: lzm
+#    pool:
+#      max-active: 200
+#      max-wait: -1
+#      max-idle: 10
+#      min-idle: 0
+#  data:
+#    mongodb:
+#      host: localhost
+#      port: 27017
+#      database: orange
+#      password: lzm
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: lzm
+#    password: lzm
 
 #\uFFFD\uFFFD\uFFFD\uFFFD \u0268\uFFFD\uFFFD\u05B8\uFFFD\uFFFDmapper\uFFFD\u00B5\uFFFDXml
-mybatis:
-  configuration:
-    #\uFFFD\u0577\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u05EA\uFFFD\uFFFD
-    mapUnderscoreToCamelCase: true
-  mapper-locations: classpath:mapper/*Mapper.xml
-  type-aliases-package: com.mr.*.domain
+#mybatis:
+#  configuration:
+#    #\uFFFD\u0577\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u05EA\uFFFD\uFFFD
+#    mapUnderscoreToCamelCase: true
+#  mapper-locations: classpath:mapper/*Mapper.xml
+#  type-aliases-package: com.mr.*.domain
 #debug \uFFFD\uFFFD\u04E1sql
 logging:
   level:
     com:
       mr: debug
-
-pay:
-  alipay:
-    gatewayUrl: https://openapi.alipaydev.com/gateway
-    appid: 2016092700606844
-    appPrivateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCHTWh5h9bDj8QvVJIbS8QsdhcVld3c+noAVnMikRGIkGu+t70iwcPKbG7YmGgmXRTVMvU3UzOiYDJjWBOFpKfdoxdxBgpTGrfIf2AqZ6T/gqSFZLg7zpIGri0NMIEn2G83S5QScCpWsfQBqVJigpE9w+UkoiOqT7rpYiJ+G2MqBo5JrmChCxbiKvt2P5MBpOHp5J2GqjAdM//4gcJcD03THsLKoAlnVd7UMp8pbz76DJSuMx7jlgMlWBBTcbZIDphClhbEPvXjNTKPihP/K2z60W59FgS9svBB/nn0GgiqHw34avdy0OqifA+zeaKxsE4mla5XV+33GClfZ3Lhe08tAgMBAAECggEAG+siGqmn7BR3Q9jsiQtaQF5hpweUjyt0DyvHeCN8/bPnN6RMN6bJ0rQLL1BLdVcRnGh2ZuMZLXEyFIOxC4uNQ9OKW70GVl2V/J4j5rwaNMrtTcUZquWWBiDclPMkQ2eKk1taA2/3nIn9snYQ1NjiRV9toeB/AX6QL+Ya/fCCxsHjesQrBUzgY/EL4V9gYrCMYRwrHDxApEVdE3QYU7cgsiARuD56cjbVT/c+sLhQA6OW59sFLrE2eIijCii7M/Sn8SpDbRCnxWYoURxVseNlB4j4UEPHgG3ohCNz4cmjXtMQbH7d5bcL7KC7SG7Sc6q5qGou9vFyv+qCrb5TPTAztQKBgQDfDhBYUnd73Tj2V3cKetoi3JoGWF7CwdqYaKHjcesHwPdr13++01uuCbXkrE+9sjFsVwMG6z6ItQLT/3EuiCqTiodEmSsk/u+Cy3QmqiztbL3ZO/GYEB04LpTpJiNlzL3mp0PsFwhUkj0MR0BbqjNwIKtBOAl2jYAPw0zDBihOKwKBgQCbSVRvEqmvQnsZxAZPDThfa6G0nEZzYsUdHGmww9/GTYGCclFdlx1Q5rimkwadvAW9ykTg+1gea+HXlS9R9FTY74VfcSNv2hHlxSvaPuGhZ4iYu7eFQ940rUgiNO/HwIB/hgU+4H0ndR2Qgp3leFSTmpTj30tBCV1KPOup07mEBwKBgEf9ogjflPDFVb0sPZ+ERyM5T/z8SJlTN9o46wcdnV3DShfkVbahQNXLDInhk1sGSC1PaAqzols9EMybhUwfZp5393CMfwBRx7vPLo3MHvQCRMP4NOF/Ue7wGd+mD4arrh7jnWh1hprFGC7+UCdFp5Ro9tz12RgKU2rC/eNz+U5BAoGBAIs26I1Ti/Blh3sH9Cf20C0rjyMeX0Ker9xzVoV0dS+Q2KSb3DotecjHr48WjH3ozLTjm3CfpNZRHX1qb6vnghGiWk3AXmaueBEn/TKB4UIUUa+rytGckJ9lIiAYmUbZW9n3ysgd9dXj9wdRMkFA6YISuZy42PyLaqldiGEOQWkNAoGBANU7BGq+X4U/ooph8resH56xywkdZEjT3EQK2mWxKAGRarL79U0e8nA+Veost1r/H7wgca0mxixGH504NoBVftuYgbYZGuw/eDFNny9aOo5tcPOAQccbagzLC0PmF/sjY7LyxnjoWIB0YbU9B/WaUSJ88YNtWpZaTFCpr03dYqTV
-    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz7k6mhpeYB1tfmTI9NNcknv+MFBfQUANwAotIVO8Kz18aK4r2jLhJ60ebH6BHRG0PgspGMYLftdwin0zPyvPSWB2/KOrN55ElzcJCCslynrfkzPFZqFAu4FCZUgw0K8WYvK9vZk7kTfWm8xI/IONLyndEmITcQBUsjSUSSR+mz3rUVE1TdyfGqhXaFInex3j/uLdk70JFk8sgUst2+UMm/9Enn33T4LamtFjtxfia3WlFefV4iVsbsEDpJQtBlSUa3OQ1aMpfJjRZERTJaRrPq1ZFow/7EmF3rsMsLlUT5M7RWeapv3Y5Tz1EAteBAGsUvrCsSrdeXZuZnFVduHbRwIDAQAB
-    returnUrl: http://127.0.0.1:8081/returnUrl
-    notifyUrl: http://127.0.0.1:8081/notifyUrl
-    format: JSON
