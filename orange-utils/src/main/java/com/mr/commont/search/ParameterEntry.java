@@ -1,4 +1,4 @@
-package com.mr.domain;
+package com.mr.commont.search;
 
 import lombok.Data;
 import lombok.ToString;

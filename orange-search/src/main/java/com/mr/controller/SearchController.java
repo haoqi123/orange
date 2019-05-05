@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("search")
 public class SearchController {
 
-    /*@Autowired
-    private SolrClient solrClient;*/
+    @Autowired
+    private SolrClient solrClient;
 
     /**
      * 根据id查询索引
@@ -26,7 +26,7 @@ public class SearchController {
         System.out.println(document);
         return document.toString();
     }*/
-
+    @RequestMapping("search")
     public void searchName(String name){
 
     }
