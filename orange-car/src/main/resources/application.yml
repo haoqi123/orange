@@ -1,51 +1,32 @@
 server:
   port: 8088
-
 spring:
-  devtools:
-    restart:
-      enabled: true
-  #\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0534
   datasource:
-    username: root
-    password: 7777
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://62.234.49.33:3306/haoqi?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
-    #druid \uFFFD\uFFFD\uFFFD\u077F\uFFFD\uFFFD\uFFFD\uFFFD\u04F3\uFFFD
-    type: com.alibaba.druid.pool.DruidDataSource
-  #reids \uFFFD\uFFFD\uFFFD\uFFFD
-#  redis:
-#    timeout: 1000
-#    database: 0
-#    host: 127.0.0.1
-#    port: 6380
-#    password: lzm
-#    pool:
-#      max-active: 200
-#      max-wait: -1
-#      max-idle: 10
-#      min-idle: 0
-#  data:
-#    mongodb:
-#      host: localhost
-#      port: 27017
-#      database: orange
-#      password: lzm
-#  rabbitmq:
-#    host: 127.0.0.1
-#    port: 5672
-#    username: lzm
-#    password: lzm
-
-#\uFFFD\uFFFD\uFFFD\uFFFD \u0268\uFFFD\uFFFD\u05B8\uFFFD\uFFFDmapper\uFFFD\u00B5\uFFFDXml
-#mybatis:
-#  configuration:
-#    #\uFFFD\u0577\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u05EA\uFFFD\uFFFD
-#    mapUnderscoreToCamelCase: true
-#  mapper-locations: classpath:mapper/*Mapper.xml
-#  type-aliases-package: com.mr.*.domain
-#debug \uFFFD\uFFFD\u04E1sql
-logging:
-  level:
-    com:
-      mr: debug
+      username: root
+      password: 1
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://127.0.0.1:3306/orange salad?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+      type: com.alibaba.druid.pool.DruidDataSource
+  application:
+    name: orange-car #\u670D\u52A1\u7684\u540D\u5B57
+  data:
+    #solr
+    solr:
+      host: http://127.0.0.1:8080/solr/search
+  #reids ����
+  redis:
+    timeout: 1000
+    database: 0
+    host: 127.0.0.1
+    port: 6380
+    password: lzm
+    jedis:
+      pool:
+        max-active: 200
+        max-wait: -1
+        max-idle: 10
+        min-idle: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #\u94FE\u63A5\u6CE8\u518C\u4E2D\u5FC3\u7684\u5730\u5740
