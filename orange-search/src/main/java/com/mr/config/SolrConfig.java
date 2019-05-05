@@ -7,7 +7,7 @@ import org.apache.solr.client.solrj.impl.HttpSolrClient;
  */
 public class SolrConfig {
 
-    private SolrConfig() {
+    /*private SolrConfig() {
     }
 
     private static final class SolrHolder{
@@ -16,5 +16,5 @@ public class SolrConfig {
 
     public static final HttpSolrClient getSolrClient(){
         return SolrHolder.HTTPSOLRCLIENT;
-    }
+    }*/
 }

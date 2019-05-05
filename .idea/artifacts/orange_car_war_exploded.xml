@@ -1,16 +1,13 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="orange-web:war exploded">
-    <output-path>$PROJECT_DIR$/orange-web/target/orange-web-0.0.1-SNAPSHOT</output-path>
+  <artifact type="exploded-war" name="orange-car:war exploded">
+    <output-path>$PROJECT_DIR$/orange-car/target/orange-car-0.0.1-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="orange-web" />
+          <element id="module-output" name="orange-car" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.1.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.1.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-logging:2.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
@@ -19,6 +16,10 @@
           <element id="library" level="project" name="Maven: org.slf4j:jul-to-slf4j:1.7.26" />
           <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.3.2" />
           <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.23" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-json:2.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.8" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
@@ -43,6 +44,8 @@
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter:2.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-context:2.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-commons:2.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-rsa:1.0.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.bouncycastle:bcpkix-jdk15on:1.60" />
           <element id="library" level="project" name="Maven: org.bouncycastle:bcprov-jdk15on:1.60" />
@@ -57,6 +60,8 @@
           <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.28" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:5.1.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-hystrix:2.1.1.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.2" />
           <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-netflix-eureka-client:2.1.1.RELEASE" />
           <element id="library" level="project" name="Maven: com.netflix.eureka:eureka-client:1.9.8" />
           <element id="library" level="project" name="Maven: org.codehaus.jettison:jettison:1.3.7" />
@@ -118,6 +123,7 @@
           <element id="library" level="project" name="Maven: com.netflix.ribbon:ribbon-transport:2.3.0" />
           <element id="library" level="project" name="Maven: io.reactivex:rxnetty-contexts:0.4.9" />
           <element id="library" level="project" name="Maven: io.reactivex:rxnetty-servo:0.4.9" />
+          <element id="library" level="project" name="Maven: com.netflix.hystrix:hystrix-core:1.4.3" />
           <element id="library" level="project" name="Maven: io.reactivex:rxnetty:0.4.9" />
           <element id="library" level="project" name="Maven: com.netflix.ribbon:ribbon-core:2.3.0" />
           <element id="library" level="project" name="Maven: com.netflix.ribbon:ribbon-httpclient:2.3.0" />
@@ -127,29 +133,15 @@
           <element id="library" level="project" name="Maven: com.netflix.netflix-commons:netflix-statistics:0.1.1" />
           <element id="library" level="project" name="Maven: io.reactivex:rxjava:1.3.8" />
           <element id="library" level="project" name="Maven: com.netflix.ribbon:ribbon-eureka:2.3.0" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.26" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-starter-openfeign:2.1.1.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-openfeign-core:2.1.1.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.1.4.RELEASE" />
-          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.2" />
-          <element id="library" level="project" name="Maven: io.github.openfeign.form:feign-form-spring:3.5.0" />
-          <element id="library" level="project" name="Maven: io.github.openfeign.form:feign-form:3.5.0" />
-          <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3.3" />
-          <element id="library" level="project" name="Maven: commons-io:commons-io:2.2" />
-          <element id="library" level="project" name="Maven: org.springframework.cloud:spring-cloud-commons:2.1.1.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-crypto:5.1.5.RELEASE" />
-          <element id="library" level="project" name="Maven: io.github.openfeign:feign-core:10.1.0" />
-          <element id="library" level="project" name="Maven: io.github.openfeign:feign-slf4j:10.1.0" />
-          <element id="library" level="project" name="Maven: io.github.openfeign:feign-hystrix:10.1.0" />
-          <element id="library" level="project" name="Maven: com.netflix.hystrix:hystrix-core:1.4.26" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.6.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-devtools:2.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.1.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/orange-web/target/orange-web-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/orange-car/target/orange-car-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="orange-web/web/Web" />
+      <element id="javaee-facet-resources" facet="orange-car/web/Web" />
     </root>
   </artifact>
 </component>

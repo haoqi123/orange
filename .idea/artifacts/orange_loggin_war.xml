@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="orange-loggin:war">
+    <output-path>$PROJECT_DIR$/orange-loggin/target</output-path>
+    <root id="archive" name="orange-loggin-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="orange-loggin:war exploded" />
+    </root>
+  </artifact>
+</component>

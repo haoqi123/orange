@@ -3,10 +3,10 @@ server:
 spring:
   application:
     name: orange-search #\u670D\u52A1\u7684\u540D\u5B57
-  data:
-    #solr
-    solr:
-      host: http://127.0.0.1:8080/solr/search
+#  data:
+#    #solr
+#    solr:
+#      host: http://127.0.0.1:8080/solr/search
 eureka:
   client:
     serviceUrl:

@@ -13,6 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>orange-loggin</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>war</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -32,10 +33,6 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-netflix-eureka-client</artifactId>
 			<version>RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>com.mr</groupId>
-			<artifactId>orange-utils</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

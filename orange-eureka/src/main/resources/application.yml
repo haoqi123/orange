@@ -1,6 +1,5 @@
 server:
   port: 8761 #\u670D\u52A1\u7AEF\u53E3\u53F7
-
 eureka:
   instance:
     hostname: localhost

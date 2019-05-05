@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="orange-eureka:war">
+    <output-path>$PROJECT_DIR$/orange-eureka/target</output-path>
+    <root id="archive" name="orange-eureka-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="orange-eureka:war exploded" />
+    </root>
+  </artifact>
+</component>
