@@ -22,7 +22,7 @@ public class Commodity {
 
     //商品主键
     @Field("id")
-    private Integer tCommodityId;
+    private String tCommodityId;
 
     //类目id
     @Field("gt_id")
