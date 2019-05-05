@@ -1,17 +1,20 @@
-package com.mr.domain;
+package com.mr.commont.commodity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.apache.solr.client.solrj.beans.Field;
 
 /**
- * Created by haoqi on 2019/5/4.
- * 商品参数表
+ * 商品参数
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class ParameterEntry {
-
-    //表主键
+public class Parameter {
+    //主键
     private Integer pId;
 
     //商品编号

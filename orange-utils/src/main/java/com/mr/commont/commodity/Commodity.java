@@ -1,9 +1,13 @@
-package com.mr.domain;
+package com.mr.commont.commodity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.apache.solr.client.solrj.beans.Field;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -11,8 +15,10 @@ import java.util.Date;
  * Created by haoqi on 2019/4/30.
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class SearchEntry {
+public class Commodity {
 
     //商品主键
     @Field("id")
@@ -69,8 +75,14 @@ public class SearchEntry {
 
     //修改时间
     @Field("c_update_time")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date cUpdateTime;
-
+    public String getcUpdateTimes(){
+        if(cUpdateTime != null){
+            return new SimpleDateFormat("yyyy-MM-dd").format(cUpdateTime);
+        }
+        return "";
+    }
     //规格
     @Field("c_spec")
     private String cSpec;

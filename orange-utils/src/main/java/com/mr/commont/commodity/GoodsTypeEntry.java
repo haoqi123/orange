@@ -1,6 +1,8 @@
-package com.mr.domain;
+package com.mr.commont.commodity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 /**
@@ -8,6 +10,8 @@ import lombok.ToString;
  * Created by haoqi on 2019/5/4.
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @ToString
 public class GoodsTypeEntry {
 
