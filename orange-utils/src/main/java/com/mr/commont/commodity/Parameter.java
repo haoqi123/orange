@@ -15,18 +15,14 @@ import org.apache.solr.client.solrj.beans.Field;
 @ToString
 public class Parameter {
     //主键
-    @Field("id")
     private Integer pId;
 
     //商品编号
-    @Field("c_goods_sn")
     private Integer cGoodsSn;
 
     //商品参数名称
-    @Field("p_name")
     private String pName;
 
     //商品参数值
-    @Field("p_value")
     private String pValue;
 }

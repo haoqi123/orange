@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.apache.solr.client.solrj.beans.Field;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.text.SimpleDateFormat;
@@ -19,31 +18,24 @@ import java.util.Date;
 @ToString
 public class Comment {
     //主键
-    @Field("id")
     private Integer tCommentId;
 
     //商品编号
-    @Field("c_goods_sn")
     private Integer cGoodsSn;
 
     //用户ID
-    @Field("u_id")
     private Integer uId;
 
     //打分
-    @Field("c_star")
     private Double cStar;
 
     //评论内容
-    @Field("c_content")
     private String cContent;
 
     //评论图片
-    @Field("c_pic_urls")
     private String cPicUrls;
 
     //创建时间
-    @Field("c_add_time")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date cAddTime;
     public String getcAddTimes(){
@@ -54,6 +46,5 @@ public class Comment {
     }
 
     //类型
-    @Field("c_type")
     private Integer cType;
 }

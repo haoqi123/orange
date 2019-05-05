@@ -11,7 +11,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by DELL on 2019/5/5.
+ * 购物车
  */
 @Data
 @AllArgsConstructor
