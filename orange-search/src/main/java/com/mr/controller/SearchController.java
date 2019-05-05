@@ -25,7 +25,6 @@ public class SearchController {
     public String getById() throws Exception {
         SolrDocument document = solrClient.getById("1");
         System.out.println(document);
-
         return document.toString();
     }
 }
