@@ -5,4 +5,5 @@ package com.mr.commont.order;
  * 订单实体类
  */
 public class Order {
+    //shitilei
 }
