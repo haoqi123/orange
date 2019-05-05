@@ -1,4 +1,4 @@
-package com.mr.car;
+package com.mr.commont.car;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

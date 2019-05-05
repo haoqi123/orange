@@ -1,4 +1,4 @@
-package com.mr.commodity;
+package com.mr.commont.commodity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
