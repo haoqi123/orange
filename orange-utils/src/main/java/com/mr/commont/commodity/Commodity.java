@@ -5,7 +5,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.apache.solr.client.solrj.beans.Field;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -73,8 +75,14 @@ public class Commodity {
 
     //修改时间
     @Field("c_update_time")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date cUpdateTime;
-
+    public String getcUpdateTimes(){
+        if(cUpdateTime != null){
+            return new SimpleDateFormat("yyyy-MM-dd").format(cUpdateTime);
+        }
+        return "";
+    }
     //规格
     @Field("c_spec")
     private String cSpec;
