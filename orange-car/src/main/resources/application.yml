@@ -8,9 +8,9 @@ spring:
   #\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\uFFFD\u0534
   datasource:
     username: root
-    password: 1
+    password: 7777
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/bank?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    url: jdbc:mysql://62.234.49.33:3306/haoqi?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
     #druid \uFFFD\uFFFD\uFFFD\u077F\uFFFD\uFFFD\uFFFD\uFFFD\u04F3\uFFFD
     type: com.alibaba.druid.pool.DruidDataSource
   #reids \uFFFD\uFFFD\uFFFD\uFFFD
