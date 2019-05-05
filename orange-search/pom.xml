@@ -12,7 +12,7 @@
 	<artifactId>orange-search</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>orange-search</name>
-	<packaging>pom</packaging>
+	<packaging>war</packaging>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -20,7 +20,24 @@
 	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-netflix-eureka-client</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mr</groupId>
+			<artifactId>orange-utils</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -31,6 +48,7 @@
 			<artifactId>solr-solrj</artifactId>
 			<version>7.3.1</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>

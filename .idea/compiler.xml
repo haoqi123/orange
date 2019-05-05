@@ -12,6 +12,7 @@
         <module name="orange-feign" />
         <module name="orange-loggin" />
         <module name="orange-manager" />
+        <module name="orange-search" />
         <module name="orange-utils" />
         <module name="orange-web" />
         <module name="web" />

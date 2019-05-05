@@ -20,11 +20,14 @@ public class SearchController {
      * 根据id查询索引
      * @return
      * @throws Exception
-     */
     @RequestMapping("getById")
     public String getById() throws Exception {
         SolrDocument document = solrClient.getById("1");
         System.out.println(document);
         return document.toString();
+    }*/
+
+    public void searchName(String name){
+
     }
 }
