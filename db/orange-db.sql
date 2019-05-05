@@ -67,7 +67,7 @@ create table t_comment
    t_comment_id         int not null comment '商品主键',
    c_goods_sn           int not null comment '商品主键',
    u_id                 int not null comment '用户ID',
-   c_star               int not null comment '打分',
+   c_star               double(2,1) not null comment '打分',
    c_content            varchar(200) not null comment '评论内容',
    c_pic_urls           varchar(200) not null comment '评论图片',
    c_add_time           timestamp not null DEFAULT CURRENT_TIMESTAMP comment '创建时间',
