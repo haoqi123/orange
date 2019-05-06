@@ -3,7 +3,7 @@
 <mapper namespace="com.mr.car.mapper.CarMapper">
   <!--List queryCarList(Integer tUserCarId);-->
   <select id="queryCarList" parameterType="int" resultType="com.mr.commont.car.Car">
-      select * from t_car where
+      select * from t_car where t_user_car_id =#{tUserCarId}
   </select>
 
     <!--String addGoodsToShopping(Integer goodsId, Integer count, Integer userId);-->
