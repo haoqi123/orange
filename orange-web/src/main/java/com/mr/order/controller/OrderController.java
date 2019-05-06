@@ -20,5 +20,8 @@ public class OrderController {
         return orderService.test(name);
     }
 
-
+    @RequestMapping("orderList")
+    public void orderGoods(){
+        orderService.orderGoodsList();
+    }
 }
