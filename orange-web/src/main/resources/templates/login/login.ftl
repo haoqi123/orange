@@ -15,12 +15,12 @@
 <body>
 
 <div class="login-boxtitle">
-    <a href="home.html"><img alt="logo" src="images/logobig.png" /></a>
+    <a href="home.html"><img alt="logo" src="/images/logobig.png" /></a>
 </div>
 
 <div class="login-banner">
     <div class="login-main">
-        <div class="login-banner-bg"><span></span><img src="images/big.jpg" /></div>
+        <div class="login-banner-bg"><span></span><img src="/images/big.jpg" /></div>
         <div class="login-box">
 
             <h3 class="title">登录商城</h3>
