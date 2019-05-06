@@ -13,4 +13,7 @@ public interface OrderService {
     @RequestMapping("test")
     String test(@RequestParam("name") String name);
 
+    @RequestMapping("orderList")
+    void orderGoodsList();
+
 }

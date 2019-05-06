@@ -9,7 +9,7 @@ spring:
         defaultZone: http://localhost:8761/eureka/ #链接注册中心的地址
 #mybatis
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url:  jdbc:mysql://62.234.49.33:3306/haoqi?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
     username: root
     password: 7777
