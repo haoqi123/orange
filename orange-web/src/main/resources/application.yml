@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: orange-feign
+  main:
+    allow-bean-definition-overriding: true
 eureka:
   client:
     serviceUrl:
