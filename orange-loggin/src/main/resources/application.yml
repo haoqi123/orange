@@ -1,0 +1,18 @@
+
+server:
+  port: 8085
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #\u94FE\u63A5\u6CE8\u518C\u4E2D\u5FC3\u7684\u5730\u5740
+spring:
+  application:
+    name: provider-login
+  datasource:
+    username: root
+    password: 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mr_1809?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+      #druid \uFFFD\uFFFD\uFFFD\u077F\uFFFD\uFFFD\uFFFD\uFFFD\u04F3\uFFFD
+  #    type: com.alibaba.druid.pool.DruidDataSource
+
