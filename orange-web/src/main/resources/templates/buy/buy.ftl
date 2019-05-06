@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>商品页面</title>
+    <title>商品页面购买</title>
 
     <link href="/AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
     <link href="/AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
@@ -178,18 +178,18 @@
                 <div class="tb-detail-price">
                     <li class="price iteminfo_price">
                         <dt>促销价</dt>
-                        <dd><em>¥</em><b class="sys_item_price">56.90</b>  </dd>
+                        <dd><em>¥</em><b class="sys_item_price">数据库查出的实际定价</b>  </dd>
                     </li>
                     <li class="price iteminfo_mktprice">
                         <dt>原价</dt>
-                        <dd><em>¥</em><b class="sys_item_mktprice">98.00</b></dd>
+                        <dd><em>¥</em><b class="sys_item_mktprice">数据库查出的专柜价格</b></dd>
                     </li>
                     <div class="clear"></div>
                 </div>
 
                 <!--地址-->
                 <dl class="iteminfo_parameter freight">
-                    <dt>配送至</dt>
+                    <dt>配送至地址字典</dt>
                     <div class="iteminfo_freprice">
                         <div class="am-form-content address">
                             <select data-am-selected>
@@ -218,17 +218,17 @@
                         <div class="tm-indcon"><span class="tm-label">月销量</span><span class="tm-count">1015</span></div>
                     </li>
                     <li class="tm-ind-item tm-ind-sumCount canClick">
-                        <div class="tm-indcon"><span class="tm-label">累计销量</span><span class="tm-count">6015</span></div>
+                        <div class="tm-indcon"><span class="tm-label">累计销量（根据商品id查询订单数量）</span><span class="tm-count">6015</span></div>
                     </li>
                     <li class="tm-ind-item tm-ind-reviewCount canClick tm-line3">
-                        <div class="tm-indcon"><span class="tm-label">累计评价</span><span class="tm-count">640</span></div>
+                        <div class="tm-indcon"><span class="tm-label">累计评价（查询评价的总条数）</span><span class="tm-count">640</span></div>
                     </li>
                 </ul>
                 <div class="clear"></div>
 
                 <!--各种规格-->
                 <dl class="iteminfo_parameter sys_item_specpara">
-                    <dt class="theme-login"><div class="cart-title">可选规格<span class="am-icon-angle-right"></span></div></dt>
+                    <dt class="theme-login"><div class="cart-title">可选规格（规格表）<span class="am-icon-angle-right"></span></div></dt>
                     <dd>
                         <!--操作页面-->
 
@@ -245,7 +245,7 @@
                                     <div class="theme-signin-left">
 
                                         <div class="theme-options">
-                                            <div class="cart-title">口味</div>
+                                            <div class="cart-title">口味（只有一种）</div>
                                             <ul>
                                                 <li class="sku-line selected">原味<i></i></li>
                                                 <li class="sku-line">奶油<i></i></li>
@@ -254,7 +254,7 @@
                                             </ul>
                                         </div>
                                         <div class="theme-options">
-                                            <div class="cart-title">包装</div>
+                                            <div class="cart-title">包装（只有一种）</div>
                                             <ul>
                                                 <li class="sku-line selected">手袋单人份<i></i></li>
                                                 <li class="sku-line">礼盒双人份<i></i></li>
@@ -267,7 +267,7 @@
                         <input id="min" class="am-btn am-btn-default" name="" type="button" value="-" />
                         <input id="text_box" name="" type="text" value="1" style="width:30px;" />
                         <input id="add" class="am-btn am-btn-default" name="" type="button" value="+" />
-                        <span id="Stock" class="tb-hidden">库存<span class="stock">1000</span>件</span>
+                        <span id="Stock" class="tb-hidden">库存（可不写）<span class="stock">1000</span>件</span>
                     </dd>
 
             </div>

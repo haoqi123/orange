@@ -16,7 +16,6 @@ import java.util.List;
  * Created by DELL on 2019/5/5.
  */
 @RestController
-@RequestMapping("car")
 public class CarController {
     @Autowired
     private CarService carService;
@@ -29,7 +28,7 @@ public class CarController {
     @RequestMapping(value = "queryCarList",method = RequestMethod.GET)
     public ModelAndView queryCarList(Car car){
         //返回指定视图
-        ModelAndView modelAndView=new ModelAndView("");
+        ModelAndView modelAndView=new ModelAndView("/car/shopcart");
         List list=carService.queryCarList(car);
         modelAndView.addObject("list",list);
         return modelAndView;

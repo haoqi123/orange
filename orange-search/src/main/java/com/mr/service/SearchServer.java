@@ -1,8 +1,6 @@
 package com.mr.service;
 
 import com.mr.commont.commodity.GoodsTypeEntry;
-import com.mr.commont.commodity.Parameter;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 import java.util.Map;
@@ -19,12 +17,12 @@ public interface SearchServer {
      * @param ids
      * @return
      */
-    Set<GoodsTypeEntry> selectGoodsTypeIds(@Param("ids") List<Integer> ids);
+    Set<GoodsTypeEntry> selectGoodsTypeIds(List<Integer> ids);
 
     /**
      * 查询商品参数
      * @param ids
      * @return
      */
-    Map<String,Set<String>> selectParameterIds(@Param("ids") List<Integer> ids);
+    Map<String,Set<String>> selectParameterIds(List<Integer> ids);
 }
