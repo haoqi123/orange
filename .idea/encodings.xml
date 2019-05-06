@@ -5,12 +5,13 @@
     <file url="file://$PROJECT_DIR$/oragne-order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orange-car" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orange-eureka" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/orange-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orange-loggin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orange-manager" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orange-search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orange-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orange-utils" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/orange-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/orangedomain" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

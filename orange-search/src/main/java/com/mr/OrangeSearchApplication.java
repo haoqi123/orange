@@ -9,9 +9,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient
 public class
 OrangeSearchApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(OrangeSearchApplication.class, args);
 	}
-
 }
