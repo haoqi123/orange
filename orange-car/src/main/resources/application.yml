@@ -1,5 +1,11 @@
 server:
   port: 8088
+mybatis:
+  configuration:
+    #�շ�������ת��
+    mapUnderscoreToCamelCase: true
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.mr.commont.*.*
 spring:
   datasource:
       username: root
