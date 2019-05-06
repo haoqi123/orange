@@ -8,7 +8,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
+	<groupId>com.mr</groupId>
 	<artifactId>orange-utils</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>orange-utils</name>
 	<packaging>jar</packaging>
 	<properties>
@@ -26,6 +28,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.apache.solr</groupId>
 			<artifactId>solr-solrj</artifactId>

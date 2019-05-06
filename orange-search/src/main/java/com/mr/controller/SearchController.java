@@ -7,12 +7,12 @@ import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.response.QueryResponse;
-import org.apache.solr.common.SolrDocument;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -51,8 +51,8 @@ public class SearchController {
         if (list==null&&list.size()==0)return null;
 
         //System.out.println(list);
-        List<Integer> goodsId = null;
-        List<Integer> typeId = null;
+        List<Integer> goodsId = new ArrayList<>();
+        List<Integer> typeId = new ArrayList<>();
         for (Commodity c:list) {
             goodsId.add(c.getCGoodsSn());
             typeId.add(c.getGtId());

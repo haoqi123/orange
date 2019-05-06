@@ -36,7 +36,8 @@ public class SearchServerImpl implements SearchServer {
         }
         Set<String> strings;
         for (Parameter p:parameters) {
-            strings = map.get(p.getPName());
+            Set<String> strings1 = map.get(p.getPName());
+            strings = strings1==null? new HashSet<>():strings1;
             strings.add(p.getPValue());
             map.put(p.getPName(),strings);
         }
