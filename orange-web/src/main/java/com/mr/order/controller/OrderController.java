@@ -30,7 +30,7 @@ public class OrderController {
     public ModelAndView orderGoods(){
         //new一个ModelAndView对象
         ModelAndView mo = new ModelAndView();
-
+        System.err.println("run");
         List<OrderGoods> goodsList = orderService.orderGoodsList();
 
         //将数据放入到modelandview
