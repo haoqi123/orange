@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mr.order.mapper.OrderMapper">
+
+    <select id="getOrderGoodsList" resultType="com.mr.commont.order.OrderGoods">
+      select order_goods_id orderGoodsId, order_no orderNo, c_goods_sn cGoodsSn, order_goods_introduce orderGoodsIntroduce, order_goods_num orderGoodsNum, order_goods_describe orderGoodsDescribe, order_goods_money orderGoodsMoney FROM t_order_goods
+    </select>
+
+</mapper>
