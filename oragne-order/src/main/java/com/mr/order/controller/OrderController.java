@@ -25,8 +25,9 @@ public class OrderController {
         ModelAndView mo = new ModelAndView();
         //数据库或者Redis查到的数据
         List<OrderGoods> list = orderService.getOrderList();
-
-        System.out.println(list);
+        //将数据放入到modelandview
+        mo.addObject("list",list);
+        mo.setViewName("");
         return null;
     }
 

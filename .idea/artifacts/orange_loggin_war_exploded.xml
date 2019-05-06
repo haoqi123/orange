@@ -150,16 +150,8 @@
           <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml:3.17" />
           <element id="library" level="project" name="Maven: org.apache.poi:poi-ooxml-schemas:3.17" />
           <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.6.0" />
-          <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
           <element id="library" level="project" name="Maven: com.github.virtuald:curvesapi:1.04" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.1.6.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.1.6.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.1.6.RELEASE" />
-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.11" />
-          <element id="library" level="project" name="Maven: com.alibaba:druid-spring-boot-starter:1.1.10" />
-          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.10" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.1.6.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.1.6.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.1.6.RELEASE" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.11" />
           <element id="library" level="project" name="Maven: com.alibaba:druid-spring-boot-starter:1.1.10" />
