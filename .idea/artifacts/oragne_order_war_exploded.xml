@@ -169,6 +169,7 @@
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-freemarker:2.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.28" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.xmlunit:xmlunit-core:2.6.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
