@@ -12,4 +12,6 @@ import java.util.List;
 public interface CarMapper {
 
     List queryCarList(Integer tUserCarId);
+
+    String addGoodsToShopping(Integer goodsId, Integer count, Integer userId);
 }
