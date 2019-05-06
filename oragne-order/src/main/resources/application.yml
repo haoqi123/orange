@@ -7,3 +7,18 @@ spring:
     client:
       serviceUrl:
         defaultZone: http://localhost:8761/eureka/ #链接注册中心的地址
+#mybatis
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:  jdbc:mysql://62.234.49.33:3306/haoqi?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: 7777
+  redis:
+    host: localhost
+    port: 6379
+    password: spy
+    database: 1
+#Redis
+##mybatis配置'
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml

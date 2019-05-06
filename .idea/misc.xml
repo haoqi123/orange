@@ -13,14 +13,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/orange-web/pom.xml" />
-        <option value="$PROJECT_DIR$/orange-utils/pom.xml" />
-        <option value="$PROJECT_DIR$/orange-manager/pom.xml" />
-        <option value="$PROJECT_DIR$/orange-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/orange-car/pom.xml" />
-        <option value="$PROJECT_DIR$/oragne-order/pom.xml" />
-        <option value="$PROJECT_DIR$/orange-search/pom.xml" />
-        <option value="$PROJECT_DIR$/orange-loggin/pom.xml" />
       </list>
     </option>
   </component>

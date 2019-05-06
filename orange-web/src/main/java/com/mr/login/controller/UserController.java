@@ -13,8 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class UserController {
 
-    @Value("${server.port}")
-    String port;
+
 
     @RequestMapping("login")
     public ModelAndView tologin(){
@@ -22,4 +21,6 @@ public class UserController {
         mv.setViewName("/login/login");
         return mv;
     }
+
+
 }
