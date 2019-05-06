@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mr.dao.SearchMapper">
+
+    <!--查询商品类型名-->
+    <select id="selectGoodsTypeIds" resultType="com.mr.commont.commodity.GoodsTypeEntry">
+        SELECT gt_id gtId,gt_name gtName
+        FROM t_goodsType
+        <where>
+            <foreach collection="ids" item="id" separator="," open="gt_id in (" close=")">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+
+    <!--查询商品参数-->
+    <select id="selectParameterIds" resultType="com.mr.commont.commodity.Parameter">
+        SELECT c_goods_sn cGoodsSn,p_name pName,p_value pValue
+        FROM t_parameter
+        <where>
+            <foreach collection="ids" item="id" separator="," open="c_goods_sn in (" close=")">
+                #{id}
+            </foreach>
+        </where>
+    </select>
+</mapper>
