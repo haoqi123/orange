@@ -147,7 +147,7 @@
 											<div class="item-amount ">
 												<div class="sl">
 													<input class="min am-btn" name="" type="button" value="-" />
-													<input class="text_box" name="" type="text" value="3" style="width:30px;" />
+													<input class="text_box" name="" type="text" value="0" style="width:30px;" />
 													<input class="add am-btn" name="" type="button" value="+" />
 												</div>
 											</div>
@@ -155,7 +155,7 @@
 									</li>
 									<li class="td td-sum">
 										<div class="td-inner">
-											<em tabindex="0" class="J_ItemSum number">117.00</em>
+											<em tabindex="0" class="J_ItemSum number"></em>
 										</div>
 									</li>
 									<li class="td td-op">
