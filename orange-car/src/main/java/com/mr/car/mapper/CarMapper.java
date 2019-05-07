@@ -11,7 +11,7 @@ import java.util.List;
 @Mapper
 public interface CarMapper {
 
-    List queryCarList(Integer tUserCarId);
+    List queryCarList(Integer tUserId);
 
     String addGoodsToShopping(Integer goodsId, Integer count, Integer userId);
 }
