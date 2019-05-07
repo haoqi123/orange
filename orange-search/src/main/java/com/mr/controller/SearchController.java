@@ -1,7 +1,8 @@
 package com.mr.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.mr.commont.commodity.Commodity;
-import com.mr.config.SearchResult;
+import com.mr.utils.SearchResult;
 import com.mr.service.SearchServer;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
@@ -9,6 +10,7 @@ import org.apache.solr.client.solrj.SolrServerException;
 import org.apache.solr.client.solrj.response.QueryResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
@@ -28,6 +30,7 @@ public class SearchController {
     @Autowired
     private SolrClient solrClient;
 
+
     /**
      * 根据id查询索引
      * @return
@@ -38,8 +41,8 @@ public class SearchController {
         System.out.println(document);
         return document.toString();
     }*/
-    @RequestMapping("search")
-    public SearchResult searchName(String name) throws IOException, SolrServerException {
+    @RequestMapping("searchDoc")
+    public String searchName(@RequestParam("name") String name) throws IOException, SolrServerException {
         //不允许查空
         if (name.isEmpty())return null;
 
@@ -61,6 +64,9 @@ public class SearchController {
         searchResult.setGoodsTypeSet(searchServer.selectGoodsTypeIds(typeId));
         searchResult.setParameterSet(searchServer.selectParameterIds(goodsId));
         searchResult.setData(list);
-        return searchResult;
+
+        String string = JSONObject.toJSONString(searchResult);
+        System.err.println(string);
+        return string;
     }
 }

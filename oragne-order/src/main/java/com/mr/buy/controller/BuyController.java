@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @RestController
 public class BuyController {
-    @Autowired
+
     private BuyService buyService;
 
     @RequestMapping("buyPage")
