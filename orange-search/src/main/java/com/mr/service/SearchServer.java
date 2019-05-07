@@ -1,6 +1,7 @@
 package com.mr.service;
 
 import com.mr.commont.commodity.GoodsTypeEntry;
+import com.mr.utils.SearchCommodityVO;
 
 import java.util.List;
 import java.util.Map;
@@ -25,4 +26,11 @@ public interface SearchServer {
      * @return
      */
     Map<String,Set<String>> selectParameterIds(List<Integer> ids);
+
+    /**
+     * 根据商品id查询
+     * @param id
+     * @return
+     */
+    SearchCommodityVO selectById(Integer id);
 }

@@ -5,7 +5,17 @@ spring:
     name: orange-feign
   main:
     allow-bean-definition-overriding: true
+  devtools:
+    restart:
+      enabled: true
+      exclude: WEB-INF
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+#热部署生效
+#spring.devtools.restart.enabled=true
+#设置重启的目录
+#spring.devtools.restart.additional-paths=src/main/java
+#classpath目录下的WEB-INF文件夹内容修改不重启
+#spring.devtools.restart.exclude=WEB-INF/**

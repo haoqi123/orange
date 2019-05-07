@@ -6,15 +6,15 @@
 
 		<title>搜索页面</title>
 
-		<link href="AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
-		<link href="AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
 
-		<link href="basic/css/demo.css" rel="stylesheet" type="text/css" />
+		<link href="../basic/css/demo.css" rel="stylesheet" type="text/css" />
 
-		<link href="css/seastyle.css" rel="stylesheet" type="text/css" />
+		<link href="../css/seastyle.css" rel="stylesheet" type="text/css" />
 
-		<script type="text/javascript" src="basic/js/jquery-1.7.min.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="../basic/js/jquery-1.7.min.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
 	</head>
 
 	<body>
@@ -108,50 +108,34 @@
 									</dl>
 								</li>
 								<div class="clear"></div>
-								<li class="select-list">
-									<dl id="select1">
-										<dt class="am-badge am-round">品牌</dt>	
-									
-										 <div class="dd-conent">										
-											<dd class="select-all selected"><a href="#">全部</a></dd>
-											<dd><a href="#">百草味</a></dd>
-											<dd><a href="#">良品铺子</a></dd>
-											<dd><a href="#">新农哥</a></dd>
-											<dd><a href="#">楼兰蜜语</a></dd>
-											<dd><a href="#">口水娃</a></dd>
-											<dd><a href="#">考拉兄弟</a></dd>
-										 </div>
-						
-									</dl>
-								</li>
-								<li class="select-list">
-									<dl id="select2">
-										<dt class="am-badge am-round">种类</dt>
-										<div class="dd-conent">
-											<dd class="select-all selected"><a href="#">全部</a></dd>
-											<dd><a href="#">东北松子</a></dd>
-											<dd><a href="#">巴西松子</a></dd>
-											<dd><a href="#">夏威夷果</a></dd>
-											<dd><a href="#">松子</a></dd>
-										</div>
-									</dl>
-								</li>
-								<li class="select-list">
-									<dl id="select3">
-										<dt class="am-badge am-round">选购热点</dt>
-										<div class="dd-conent">
-											<dd class="select-all selected"><a href="#">全部</a></dd>
-											<dd><a href="#">手剥松子</a></dd>
-											<dd><a href="#">薄壳松子</a></dd>
-											<dd><a href="#">进口零食</a></dd>
-											<dd><a href="#">有机零食</a></dd>
-										</div>
-									</dl>
-								</li>
-					        
-							</ul>
-							<div class="clear"></div>
-                        </div>
+                                    <li class="select-list">
+                                        <dl id="select1">
+                                            <dt class="am-badge am-round">种类</dt>
+                                            <div class="dd-conent">
+                                                <dd class="select-all selected"><a href="#">全部</a></dd>
+												<#list result.goodsTypeSet as item>
+                                                	<dd><a href="#">${item.gtName}</a></dd>
+												</#list>
+                                            </div>
+                                        </dl>
+									</li>
+									<#list result.parameterSet?keys as key>
+										<#--${key}:${result.parameterSet[key]}-->
+										<li class="select-list">
+											<dl id="select2">
+												<dt class="am-badge am-round">${key}</dt>
+												<div class="dd-conent">
+													<dd class="select-all selected"><a href="#">全部</a></dd>
+													<#list result.parameterSet[key] as item>
+                                                        <dd><a href="#">${item}</a></dd>
+													</#list>
+												</div>
+											</dl>
+										</li>
+									</#list>
+								</ul>
+								<div class="clear"></div>
+							</div>
 							<div class="search-content">
 								<div class="sort">
 									<li class="first"><a title="综合">综合排序</a></li>
@@ -162,221 +146,22 @@
 								<div class="clear"></div>
 
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
-									<li>
-										<div class="i-pic limit">
-											<img src="images/imgsearch1.jpg" />											
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
-									<li>
-										<div class="i-pic limit">
-											
-											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">【良品铺子旗舰店】手剥松子218g 坚果炒货零食新货巴西松子包邮</p>
-											<p class="price fl">
-												<b>¥</b>
-												<strong>56.90</strong>
-											</p>
-											<p class="number fl">
-												销量<span>1110</span>
-											</p>
-										</div>
-									</li>
+									<#list result.commoditieList as item1>
+										<li>
+											<div class="i-pic limit" onclick="onSearchFormClick(${item1.goodsSn!""})">
+												<img src="images/imgsearch1.jpg" />
+												<p class="title fl">${item1.name!"网络繁忙"}</p>
+												<p class="price fl">
+													<b>¥</b>
+													<strong>${item1.retailPrice!"网络繁忙"}</strong>
+												</p>
+												<p class="number fl">
+													销量<span>1110</span>
+												</p>
+											</div>
+										</li>
+									</#list>
 								</ul>
-							</div>
-							<div class="search-side">
-
-								<div class="side-title">
-									经典搭配
-								</div>
-
-								<li>
-									<div class="i-pic check">
-										<img src="images/cp.jpg" />
-										<p class="check-title">萨拉米 1+1小鸡腿</p>
-										<p class="price fl">
-											<b>¥</b>
-											<strong>29.90</strong>
-										</p>
-										<p class="number fl">
-											销量<span>1110</span>
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="i-pic check">
-										<img src="images/cp2.jpg" />
-										<p class="check-title">ZEK 原味海苔</p>
-										<p class="price fl">
-											<b>¥</b>
-											<strong>8.90</strong>
-										</p>
-										<p class="number fl">
-											销量<span>1110</span>
-										</p>
-									</div>
-								</li>
-								<li>
-									<div class="i-pic check">
-										<img src="images/cp.jpg" />
-										<p class="check-title">萨拉米 1+1小鸡腿</p>
-										<p class="price fl">
-											<b>¥</b>
-											<strong>29.90</strong>
-										</p>
-										<p class="number fl">
-											销量<span>1110</span>
-										</p>
-									</div>
-								</li>
-
 							</div>
 							<div class="clear"></div>
 							<!--分页 -->
@@ -592,22 +377,11 @@
 
 <div class="theme-popover-mask"></div>
 
-		<#--<script>
-            function onSearchFormClick() {
-                $.ajax({
-                    type:get,
-                    dataType:html,
-                    data:{"name":$("#index_none_header_sysc").val()},
-                    url:"http://localhost:8765/search/search",
-                    success:function(html){
-
-                    },
-                    error:function(){
-
-                    }
-                });
+		<script>
+            function onSearchFormClick(id) {
+                localhost.href="http://";
             }
-		</script>-->
+		</script>
 	</body>
 
 </html>

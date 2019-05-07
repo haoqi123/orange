@@ -2,6 +2,7 @@ package com.mr.search.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.mr.search.service.SearchService;
+import com.mr.utils.SearchCommodityVO;
 import com.mr.utils.SearchResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,5 +32,17 @@ public class SearchController {
         modelAndView.addObject("result",searchResult);
         return modelAndView;
     }
+
+    @RequestMapping(value = "selectById",method= RequestMethod.GET)
+    public ModelAndView selectById(@RequestParam("id") Integer id){
+        String s = service.SelectId(id);
+        SearchCommodityVO searchCommodityVO = JSONObject.parseObject(s, SearchCommodityVO.class);
+        System.err.println(searchCommodityVO);
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/search/introduction");
+        modelAndView.addObject("result",searchCommodityVO);
+        return modelAndView;
+    }
+
 
 }
