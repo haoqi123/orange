@@ -60,6 +60,8 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -71,6 +73,7 @@
 					<fork>true</fork>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 
