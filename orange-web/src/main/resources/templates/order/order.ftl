@@ -736,7 +736,7 @@
 																</div>
 															</li>
 															<li class="td td-change">
-																<a href="pay.html">
+																<a href="pay.ftl">
 																<div class="am-btn am-btn-danger anniu">
 																	一键支付</div></a>
 															</li>
