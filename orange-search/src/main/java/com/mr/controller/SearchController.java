@@ -60,7 +60,7 @@ public class SearchController {
         List<Integer> goodsId = new ArrayList<>();
         List<Integer> typeId = new ArrayList<>();
         for (Commodity c:list) {
-            goodsId.add(c.getCGoodsSn());
+            goodsId.add(c.getGoodsSn());
             typeId.add(c.getGtId());
         }
         SearchResult searchResult = new SearchResult();
