@@ -32,4 +32,11 @@ public class UserController {
         return userService.addUser(user);
     }
 
+    @RequestMapping("register")
+    public ModelAndView toregister(){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("/login/register");
+        return mv;
+    }
+
 }

@@ -3,7 +3,6 @@ package com.mr.utils;
 
 import com.mr.commont.commodity.Commodity;
 import com.mr.commont.commodity.GoodsTypeEntry;
-import com.mr.utils.LayResult;
 import lombok.Data;
 
 import java.io.Serializable;
