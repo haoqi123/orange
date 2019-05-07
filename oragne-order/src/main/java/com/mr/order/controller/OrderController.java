@@ -20,15 +20,9 @@ public class OrderController {
     private OrderService orderService;
 
     @RequestMapping("orderList")
-    public ModelAndView getOrderList(){
-        //new一个ModelAndView对象
-        ModelAndView mo = new ModelAndView();
+    public List<OrderGoods> getOrderList(){
         //数据库或者Redis查到的数据
-        List<OrderGoods> list = orderService.getOrderList();
-        //将数据放入到modelandview
-        mo.addObject("list",list);
-        mo.setViewName("");
-        return null;
+        return orderService.getOrderList();
     }
 
 
