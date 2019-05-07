@@ -1,10 +1,12 @@
 package com.mr.order.controller;
 
 import com.mr.commont.order.OrderGoods;
+import com.mr.commont.order.OrderGoodsVo;
 import com.mr.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
@@ -38,4 +40,11 @@ public class OrderController {
         mo.setViewName("order/order");
         return mo;
     }
+
+    //生成订单
+    @PostMapping("addOrder")
+    public void addOrder(OrderGoodsVo orderGoodsVo){
+        orderService.addOrder(orderGoodsVo);
+    }
+
 }
