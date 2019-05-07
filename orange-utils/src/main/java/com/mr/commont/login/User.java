@@ -19,22 +19,15 @@ import java.util.Date;
 @ToString
 public class User {
 
-    @Field("t_user_id")
+
     private Integer tUserId;
-    @Field("user_id")
     private Integer userId;
-    @Field("user_name")
     private String userName;
-    @Field("user_phone")
     private String userPhone;
-    @Field("user_sex")
     private Integer userSex;
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @Field("user_birthday")
     private Date userBirthday;
-    @Field("user_level")
     private Integer userLevel;
-    @Field("user_status")
     private Integer userStatus;
 
     public String getuserBirthdayStr(){
