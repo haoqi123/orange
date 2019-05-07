@@ -9,4 +9,6 @@ import java.util.List;
  */
 public interface CarService {
     List queryCarList(Car car);
+
+    String addGoodsToShopping(Integer goodsId, Integer count, Integer userId);
 }

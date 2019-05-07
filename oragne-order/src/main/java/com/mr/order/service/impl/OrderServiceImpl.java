@@ -5,6 +5,7 @@ import com.mr.commont.order.OrderGoods;
 import com.mr.order.mapper.OrderMapper;
 import com.mr.order.service.OrderService;
 import com.mr.utils.SerializeUtil;
+import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -30,20 +31,18 @@ public class OrderServiceImpl implements OrderService{
 
         //先从redis中回去一下数据
         String list = redis.opsForValue().get("orederList");
-        //将获取的数据序列化
-        byte[] serialize = SerializeUtil.serialize(list);
-        //将序列化的数据强转为对象集合
-        List<OrderGoods> unserialize = (List<OrderGoods>) SerializeUtil.unserialize(serialize);
-        if(unserialize != null){
+        //转化为list
+        List<OrderGoods> list1 = JSONArray.toList(JSONArray.fromObject(list), OrderGoods.class);
+
+        if(list1 != null){
             //如果查询出来的数据为null就走一遍数据库
-            return unserialize;
+            return list1;
         }else{
             //将数据库中查询到的所有数据放进redis
             List<OrderGoods> listOrder =  orderMapper.getOrderGoodsList();
-            System.out.println("1112233"+listOrder.get(0));
-            byte[] serialize1 = SerializeUtil.serialize(listOrder.get(0));
-
-            String str = serialize1.toString();
+            String str = JSONArray.fromObject(listOrder).toString();
+            /*byte[] serialize1 = SerializeUtil.serialize(listOrder.get(0));
+            String str = serialize1.toString();*/
             redis.opsForValue().set("orederList",str);
             return listOrder;
         }
