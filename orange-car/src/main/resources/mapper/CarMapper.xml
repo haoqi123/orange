@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mr.car.mapper.CarMapper">
-  <!--List queryCarList(Integer tUserCarId);-->
-  <select id="queryCarList" parameterType="int" resultType="com.mr.commont.car.Car">
-      select * from t_car where
+  <!--List queryCarList(Integer tUserId);-->
+  <select id="queryCarList" parameterType="int" resultType="com.mr.commont.commodity.Commodity">
+      select * from t_commodity where c_goods_sn =#{tUserId}
   </select>
 
     <!--String addGoodsToShopping(Integer goodsId, Integer count, Integer userId);-->
