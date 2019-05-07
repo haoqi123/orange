@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f31bccd1-9c68-4859-8e88-bbc21bf9b6d5" name="Default" comment="idea">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/-0-saturn_solar.jpg_220x220.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/0-item_pic.jpg_220x220.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/01_mid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/01_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/02_mid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/02_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/03_mid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/03_small.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/1-item_pic.jpg_220x220.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/1_160x160.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/2016.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/3CoOkxrFOP.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/556.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/557.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/559.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/566.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/566fda5cN4b8a1675.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/62988.jpg_80x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/65.jpg_120x120xz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/72h.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/88.jpg_120x120xz.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/T13iv.XiFdXXa94Hfd-32-32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/TB102.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/TB1SSK7JpXXXXXCXXXXXXXXXXXX-800-600.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/TB1_pic.jpg_200x200.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/TJ.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/TJ2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/YXARdXxj5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/act1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/act2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/act3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/activity.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/activity1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/activity2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/activity3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ad1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ad2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ad3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ad4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ad5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ad6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ad7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ad8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/addbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/addicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/addicon1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/addicon2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/advTip.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/bamboo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/bamboo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/big.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/blog09.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/bonus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/browse1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/cake.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/cake.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/candy.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/candy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/cardbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/checkbox.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/chocolate.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/chocolate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/chongzhi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/clockbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/combo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/comment.jpg_400x400.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/cookies.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/cookies.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/coupon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/coupon2015.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/coupon20150805.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/couponli.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/cp.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/cp2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/day-to.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/extra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/fish.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/fish.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/getAvatar.do.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/gift_intro_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/gift_stamp_1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/gift_stamp_2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/gift_stamp_21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/gift_stamp_3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/gift_stamp_31.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/header-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/header-bg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/huismall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/hwbn40x40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/ibar_sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/icon-sale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconbig.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconfont-bad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconfont-badon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconfont-evaluate.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconfont-good.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconfont-middle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconsmall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconsmall0.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconsmall1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconsmall2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/iconsmall3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/imgsearch1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/index_ico_png32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/item-pic.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/kouhong.jpg_80x80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/kuaidi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/list1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/listsmall1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/logo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/logobig.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/logobig1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/logobig2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/mansmall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/mask.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/meat.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/meat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/moneysmall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/mygift_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/navce.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/navsmall.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/no-img_mid_.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/nut.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/nut.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/package.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/package.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/pay.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/peraddbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/peraddress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/peraddressbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/receive.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/refund.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/return-process-cd.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/row1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/row2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/row3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/row4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/sale-t.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/sale-t_clock.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/sale1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/sale2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/sale3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/scoll1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/scoll2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/side.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/songzi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/sys_item_selected.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tea.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tea.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tj.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tj1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tj2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tw1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tw2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tw3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tw4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tw5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tw6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/tw7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/wallet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/wangyin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/wdsc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/weixin_code_145.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/weizhifu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/zhifubao.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/orange-web/src/main/resources/static/images/图标.png" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/orange-utils/target/" />
+    <ignored path="$PROJECT_DIR$/oragne-order/target/" />
+    <ignored path="$PROJECT_DIR$/orange-eureka/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/orange-manager/target/" />
+    <ignored path="$PROJECT_DIR$/orange-car/target/" />
+    <ignored path="$PROJECT_DIR$/orange-web/target/" />
+    <ignored path="$PROJECT_DIR$/orange-search/target/" />
+    <ignored path="$PROJECT_DIR$/orange-loggin/target/" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="search.ftl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/orange-web/src/main/resources/templates/search/search.ftl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/search/service/SearchService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="orange-utils" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="orange-search" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orange-web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.OragneOrderApplication">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
+        <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cold Fusion runner description" factoryName="Cold Fusion" custom_browser="" web_path="">
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="orange-manager" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="false" name="OragneOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mr.OragneOrderApplication" />
+      <module name="oragne-order" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OrangeEurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mr.OrangeEurekaApplication" />
+      <module name="orange-eureka" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OrangeManagerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mr.OrangeManagerApplication" />
+      <module name="orange-manager" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OrangeCarApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mr.OrangeCarApplication" />
+      <module name="orange-car" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OrangeWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mr.OrangeWebApplication" />
+      <module name="orange-web" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OrangeSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mr.OrangeSearchApplication" />
+      <module name="orange-search" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="OrangeLogginApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mr.OrangeLogginApplication" />
+      <module name="orange-loggin" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="7">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.OragneOrderApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.OrangeEurekaApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.OrangeManagerApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.OrangeCarApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.OrangeWebApplication" />
+      <item index="5" class="java.lang.String" itemvalue="Spring Boot.OrangeSearchApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.OrangeLogginApplication" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="57000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45515695" sideWeight="0.502445" order="14" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4541565" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31390134" sideWeight="0.49633253" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17713004" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41367713" sideWeight="0.49755502" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46076232" sideWeight="0.49755502" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2735426" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21577017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294621" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="22" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/java/com/mr/config/SolrConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/src/main/java/com/mr/commont/commodity/Parameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/src/main/java/com/mr/commont/commodity/GoodsTypeEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/java/com/mr/dao/SearchDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/src/main/java/com/mr/utils/CookieUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="7" lean-forward="false" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/org/springframework/boot/orange-utils/2.1.4.RELEASE/orange-utils-2.1.4.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-eureka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/java/com/mr/service/SearchServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/resources/mapper/SearchMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="80" lean-forward="true" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-car/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="113" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/java/com/mr/dao/SearchMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/src/test/java/com/mr/OrangeSearchApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/resources/templates/buy/buy.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="75" lean-forward="true" selection-start-line="16" selection-start-column="75" selection-end-line="16" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/resources/templates/search/search.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/buy/controller/BuyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/order/controller/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/order/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="51" lean-forward="false" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/login/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="36" lean-forward="false" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oragne-order/src/main/java/com/mr/OragneOrderApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/car/controller/CarController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oragne-order/src/main/java/com/mr/order/mapper/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/orange_search_war_exploded.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oragne-order/src/main/java/com/mr/order/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/orange-utils.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/src/test/java/com/mr/OrangeUtilsApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/src/main/java/com/mr/OrangeUtilsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/src/main/java/com/mr/utils/ResultVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/src/main/java/com/mr/utils/SerializeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-192">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/resources/templates/car/shopcart.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/search/service/SearchServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/java/com/mr/service/impl/SearchServerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.6.RELEASE/spring-web-5.1.6.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="107" column="66" lean-forward="true" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-eureka/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/target/classes/com/mr/controller/SearchController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="81" column="21" lean-forward="true" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="64" column="36" lean-forward="false" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="40" column="30" lean-forward="false" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/java/jdk1.8/src.zip!/javax/naming/directory/SearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-utils/src/main/java/com/mr/utils/SearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/java/com/mr/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="692">
+          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-search/src/main/java/com/mr/OrangeSearchApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/OrangeWebApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/search/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="84" lean-forward="true" selection-start-line="25" selection-start-column="84" selection-end-line="25" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-eureka/src/main/java/com/mr/OrangeEurekaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/resources/templates/index.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="58" column="68" lean-forward="false" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/resources/templates/search/search.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="11" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/orange-web/src/main/java/com/mr/search/service/SearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
