@@ -25,19 +25,19 @@
     </select>
     <!--根据id查询商品详情-->
     <select id="selectById" resultType="com.mr.utils.SearchCommodityVO">
-        SELECT  com.t_commodity_id tCommodityId ,
+        SELECT  com.t_commodity_id commodityId ,
                 com.gt_id gtId,
-                com.c_goods_sn cGoodsSn,
-                com.c_name cName,
-                com.c_counter_price cCounterPrice,
-                com.c_retail_price cRetailPrice,
-                com.c_is_hot cIsHot,
-                com.c_is_new cIsNew,
-                com.c_is_on_sale cIsOnSale,
-                com.c_keywords cKeywords,
-                com.c_unit cUnit,
-                com.c_brief cBrief,
-                com.c_number cNumber,
+                com.c_goods_sn goodsSn,
+                com.c_name 'name',
+                com.c_counter_price counterPrice,
+                com.c_retail_price retailPrice,
+                com.c_is_hot isHot,
+                com.c_is_new isNew,
+                com.c_is_on_sale isOnSale,
+                com.c_keywords keywords,
+                com.c_unit unit,
+                com.c_brief brief,
+                com.c_number 'number',
                 pic.pic_url picUrl,
                 pic.pic_type picType
         FROM t_commodity com

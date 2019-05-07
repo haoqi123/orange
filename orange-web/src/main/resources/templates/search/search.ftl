@@ -148,12 +148,12 @@
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
 									<#list result.commoditieList as item1>
 										<li>
-											<div class="i-pic limit" onclick="onSearchFormClick(${item1.cGoodsSn!""})">
+											<div class="i-pic limit" onclick="onSearchFormClick(${item1.goodsSn!""})">
 												<img src="images/imgsearch1.jpg" />
-												<p class="title fl">${item1.cName!"网络繁忙"}</p>
+												<p class="title fl">${item1.name!"网络繁忙"}</p>
 												<p class="price fl">
 													<b>¥</b>
-													<strong>${item1.cRetailPrice!"网络繁忙"}</strong>
+													<strong>${item1.retailPrice!"网络繁忙"}</strong>
 												</p>
 												<p class="number fl">
 													销量<span>1110</span>
