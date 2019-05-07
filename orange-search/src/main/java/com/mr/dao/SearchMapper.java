@@ -2,6 +2,7 @@ package com.mr.dao;
 
 import com.mr.commont.commodity.GoodsTypeEntry;
 import com.mr.commont.commodity.Parameter;
+import com.mr.utils.SearchCommodityVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
@@ -28,4 +29,11 @@ public interface SearchMapper {
      * @return
      */
     List<Parameter> selectParameterIds(@Param("ids") List<Integer> ids);
+
+    /**
+     * 根据商品id查询
+     * @param id
+     * @return
+     */
+    SearchCommodityVO selectById(@Param("id") Integer id);
 }

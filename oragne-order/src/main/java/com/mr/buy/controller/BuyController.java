@@ -11,15 +11,17 @@ import org.springframework.web.servlet.ModelAndView;
  * 购买前台项目接口
  */
 @RestController
+@RequestMapping("Abuy")
 public class BuyController {
 
+    @Autowired
     private BuyService buyService;
 
-    @RequestMapping("buyPage")
-    public ModelAndView buyPage(){
-        ModelAndView mv = new ModelAndView();
-        mv.setViewName("/buy/buy");
-        return mv;
-    }
+    /*查询商品的全部信息*/
+    /*public List queryGoods(){
+        return
+    }*/
+
+
 
 }
