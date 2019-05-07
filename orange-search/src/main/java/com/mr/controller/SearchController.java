@@ -2,6 +2,7 @@ package com.mr.controller;
 
 import com.alibaba.fastjson.JSONObject;
 import com.mr.commont.commodity.Commodity;
+import com.mr.utils.SearchCommodityVO;
 import com.mr.utils.SearchResult;
 import com.mr.service.SearchServer;
 import org.apache.solr.client.solrj.SolrClient;
@@ -16,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by Administer on 2019/4/30.
@@ -63,10 +66,23 @@ public class SearchController {
         SearchResult searchResult = new SearchResult();
         searchResult.setGoodsTypeSet(searchServer.selectGoodsTypeIds(typeId));
         searchResult.setParameterSet(searchServer.selectParameterIds(goodsId));
-        searchResult.setData(list);
+        searchResult.setCommoditieList(list);
 
         String string = JSONObject.toJSONString(searchResult);
         System.err.println(string);
+        return string;
+    }
+
+    @RequestMapping("selectById")
+    public String selectById(@RequestParam("id") Integer id){
+        List<Integer> ids = new ArrayList<>();
+        ids.add(id);
+        //查询商品参数
+        Map<String, Set<String>> stringSetMap = searchServer.selectParameterIds(ids);
+        //查询商品详情
+        SearchCommodityVO searchCommodityVO = searchServer.selectById(id);
+        searchCommodityVO.setParameterSet(stringSetMap);
+        String string = JSONObject.toJSONString(searchCommodityVO);
         return string;
     }
 }

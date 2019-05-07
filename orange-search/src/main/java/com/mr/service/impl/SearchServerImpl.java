@@ -4,6 +4,7 @@ import com.mr.commont.commodity.GoodsTypeEntry;
 import com.mr.commont.commodity.Parameter;
 import com.mr.dao.SearchMapper;
 import com.mr.service.SearchServer;
+import com.mr.utils.SearchCommodityVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -44,5 +45,8 @@ public class SearchServerImpl implements SearchServer {
         return map;
     }
 
-
+    @Override
+    public SearchCommodityVO selectById(Integer id) {
+        return mapper.selectById(id);
+    }
 }
