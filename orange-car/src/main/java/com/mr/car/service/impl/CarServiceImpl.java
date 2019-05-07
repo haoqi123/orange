@@ -21,4 +21,9 @@ public class CarServiceImpl implements CarService {
     public List queryCarList(Car car) {
         return carMapper.queryCarList(car.getTUserCarId());
     }
+
+    @Override
+    public String addGoodsToShopping(Integer goodsId, Integer count, Integer userId) {
+        return carMapper.addGoodsToShopping(goodsId,count,userId);
+    }
 }

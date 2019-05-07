@@ -1,8 +1,13 @@
 package com.mr.order.service;
 
+import com.mr.commont.order.OrderGoods;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 /**
  * Created by shangpengyu on 2019/5/5.
@@ -13,7 +18,7 @@ public interface OrderService {
     @RequestMapping("test")
     String test(@RequestParam("name") String name);
 
-    @RequestMapping("orderList")
-    void orderGoodsList();
+    @GetMapping("orderList")
+    List<OrderGoods> orderGoodsList();
 
 }

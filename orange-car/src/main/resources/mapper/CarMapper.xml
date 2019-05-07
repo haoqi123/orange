@@ -5,4 +5,7 @@
   <select id="queryCarList" parameterType="int" resultType="com.mr.commont.car.Car">
       select * from t_car where
   </select>
+
+    <!--String addGoodsToShopping(Integer goodsId, Integer count, Integer userId);-->
+
 </mapper>
