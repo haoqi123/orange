@@ -1,2 +1,20 @@
 server:
   port: 8082
+spring:
+  datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/orangetest?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+        username: root
+        password: 7777
+        type: com.alibaba.druid.pool.DruidDataSource
+mybatis:
+  mapperlocations: classpath*:mapper/*Mapper.xml
+#  #扫面domain包中的实体类并起别名
+#  config-location: classpath:mybatis-config.xml
+#日志级别改为debug可以显示sql语句,logging.level后为存放mapper接口的包
+logging:
+  level:
+    com.mr.*.mapper: debug
+#pagehelper分页插件配置
+pagehelper:
+  helperDialect: mysql
