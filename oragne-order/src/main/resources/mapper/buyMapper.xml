@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mr.buy.mapper.BuyMapper">
+
+    <!--根据id查询商品详情-->
+    <select id="queryGoods" resultType="com.mr.commont.buy.BuyGoods">
+        SELECT  com.t_commodity_id commodityId ,
+        com.gt_id gtId,
+        com.c_goods_sn goodsSn,
+        com.c_name 'name',
+        com.c_counter_price counterPrice,
+        com.c_retail_price retailPrice,
+        com.c_is_hot isHot,
+        com.c_is_new isNew,
+        com.c_is_on_sale isOnSale,
+        com.c_keywords keywords,
+        com.c_unit unit,
+        com.c_brief brief,
+        com.c_number 'number',
+        pic.pic_url picUrl,
+        pic.pic_type picType
+        FROM t_commodity com
+        LEFT JOIN t_pic pic ON com.c_goods_sn=pic.c_goods_sn
+        WHERE com.c_goods_sn = #{id}
+    </select>
+
+
+</mapper>

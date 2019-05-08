@@ -1,5 +1,6 @@
 package com.mr.buy.mapper;
 
+import com.mr.commont.buy.BuyGoods;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
@@ -9,4 +10,15 @@ import org.springframework.stereotype.Component;
 @Mapper
 @Component
 public interface BuyMapper {
+    /*
+    *查询用户的优惠券
+    * */
+    BuyGoods queryCoupopn(Integer goId);
+
+    /**
+     *查询商品
+     * @param goId
+     * @return
+     */
+    BuyGoods queryGoods(Integer goId);
 }
