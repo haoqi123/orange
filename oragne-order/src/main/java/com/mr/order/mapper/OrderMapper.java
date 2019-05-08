@@ -1,5 +1,6 @@
 package com.mr.order.mapper;
 
+import com.mr.commont.order.Logistics;
 import com.mr.commont.order.Order;
 import com.mr.commont.order.OrderGoods;
 import org.apache.ibatis.annotations.Mapper;
@@ -11,7 +12,16 @@ import java.util.List;
  */
 @Mapper
 public interface OrderMapper {
-
+    //查询订单商品
     List<OrderGoods> getOrderGoodsList();
+
+    //生成订单
+    void addOrder(Order order);
+
+    //生成订单商品
+    void addOrderGoods(OrderGoods orderGoods);
+
+    //生成物流表
+    void addLogistics(Logistics logistics);
 
 }

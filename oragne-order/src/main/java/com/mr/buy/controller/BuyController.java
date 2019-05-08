@@ -17,10 +17,14 @@ public class BuyController {
     @Autowired
     private BuyService buyService;
 
-    /*查询商品的全部信息*/
+    /*查询商品的全部信息和优惠劵*/
     /*public List queryGoods(){
         return
     }*/
+
+    /*查询收货地址*/
+   // public
+    /*查询物流*/
 
 
 
