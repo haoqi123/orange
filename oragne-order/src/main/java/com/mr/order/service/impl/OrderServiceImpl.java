@@ -1,7 +1,9 @@
 package com.mr.order.service.impl;
 
+import com.mr.commont.order.Logistics;
 import com.mr.commont.order.Order;
 import com.mr.commont.order.OrderGoods;
+import com.mr.commont.order.OrderGoodsVo;
 import com.mr.order.mapper.OrderMapper;
 import com.mr.order.service.OrderService;
 import com.mr.utils.SerializeUtil;
@@ -11,7 +13,11 @@ import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by shangpengyu on 2019/5/6.
@@ -24,6 +30,12 @@ public class OrderServiceImpl implements OrderService{
 
     @Autowired
     private StringRedisTemplate redis;
+
+    private Order order = new Order();
+
+    private OrderGoods orderGoods = new OrderGoods();
+
+    private Logistics logistics = new Logistics();
 
 
     @Override
@@ -46,5 +58,60 @@ public class OrderServiceImpl implements OrderService{
             redis.opsForValue().set("orederList",str);
             return listOrder;
         }
+    }
+
+    //生成未支付订单
+    //修改未支付订单状态
+    @Override
+    public void addOrder(OrderGoodsVo orderGoodsVo,HttpServletRequest request) {
+        //如何保证再次访问这个方法的时候是修改订单状态，如果客户端改变了要购买的商品就需要从新生成一个订单
+        //这种情况如何判断
+        //判断实体类里的start属性，判断如果有值就是生成一个待支付订单
+        //如果没值就是一个修改订单支付状态
+        if(orderGoodsVo.getStart() != null){
+            //随机生成一个订单号
+            order.setOrderNo((int) (Math.random() * 999999));
+            //给订单总金额赋值
+            order.setOrderMoney(orderGoodsVo.getOrderMoney());
+            //给订单邮费赋值
+            order.setOrderPostage(orderGoodsVo.getOrderPostage());
+            //给订单赋值
+            order.setUserId(1);
+            //订单生成时间 当前时间
+            order.setOrderGanerationTime(new Date());
+            ////订单状态
+            order.setOrderType(0);
+            //订单是否过时
+            order.setOrderInvalid(1);
+            //给订单商品赋值
+            //商品编号
+            orderGoods.setCGoodsSn(orderGoodsVo.getCGoodsSn());
+            //订单商品中的订单编号
+            orderGoods.setOrderNo(order.getOrderNo());
+            //给商品介绍赋值
+            orderGoods.setOrderGoodsIntroduce(orderGoodsVo.getOrderGoodsIntroduce());
+            //商品描述
+            orderGoods.setOrderGoodsDescribe(orderGoodsVo.getOrderGoodsDescribe());
+            //商品价格
+            orderGoods.setOrderGoodsMoney(orderGoodsVo.getOrderGoodsMoney());
+            //商品数量
+            orderGoods.setOrderGoodsNum(orderGoodsVo.getOrderGoodsNum());
+            //给物流订单赋值
+            //付给物流订单号
+            logistics.setOrderNo(order.getOrderNo());
+            //物流名称
+            logistics.setLogiName(orderGoodsVo.getLogiName());
+            //随机生成一个物流编号
+            logistics.setLogiNo(new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()));
+            //去数据库生成订单
+            orderMapper.addOrder(order);
+            //生成订单商品
+            orderMapper.addOrderGoods(orderGoods);
+            //生成物流表
+            orderMapper.addLogistics(logistics);
+
+        }
+
+
     }
 }
