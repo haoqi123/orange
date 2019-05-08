@@ -6,4 +6,149 @@
       select order_goods_id orderGoodsId, order_no orderNo, c_goods_sn cGoodsSn, order_goods_introduce orderGoodsIntroduce, order_goods_num orderGoodsNum, order_goods_describe orderGoodsDescribe, order_goods_money orderGoodsMoney FROM t_order_goods
     </select>
 
+    <insert id="addOrder" parameterType="com.mr.commont.order.Order">
+      insert INTO t_order
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+        <if test="orderId != null">
+            order_id,
+        </if>
+        <if test="userId != null">
+            user_id,
+        </if>
+        <if test="orderNo != null">
+            order_no,
+        </if>
+        <if test="orderPostage != null">
+            order_postage,
+        </if>
+        <if test="orderMoney != null">
+            order_money,
+        </if>
+        <if test="orderGanerationTime != null">
+            order_ganeration_time,
+        </if>
+        <if test="orderForceTime != null">
+            order_force_time,
+        </if>
+        <if test="orderType != null">
+            order_type,
+        </if>
+        <if test="orderInvalid != null">
+            order_invalid,
+        </if>
+    </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="orderId != null">
+                #{orderId,jdbcType=INTEGER},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="orderNo != null">
+                #{orderNo,jdbcType=INTEGER},
+            </if>
+            <if test="orderPostage != null">
+                #{orderPostage,jdbcType=DOUBLE},
+            </if>
+            <if test="orderMoney != null">
+                #{orderMoney,jdbcType=DOUBLE},
+            </if>
+            <if test="orderGanerationTime != null">
+                #{orderGanerationTime,jdbcType=DATE},
+            </if>
+            <if test="orderForceTime != null">
+                #{orderForceTime,jdbcType=DATE},
+            </if>
+            <if test="orderType != null">
+                #{orderType,jdbcType=INTEGER},
+            </if>
+            <if test="orderInvalid != null">
+                #{orderInvalid,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <insert id="addOrderGoods" parameterType="com.mr.commont.order.OrderGoods">
+      insert into t_order_goods
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="orderGoodsId != null">
+                order_goods_id,
+            </if>
+            <if test="orderNo != null">
+                order_no,
+            </if>
+            <if test="cGoodsSn != null">
+                c_goods_sn,
+            </if>
+            <if test="orderGoodsIntroduce != null">
+                order_goods_introduce,
+            </if>
+            <if test="orderGoodsDescribe != null">
+                order_goods_describe,
+            </if>
+            <if test="orderGoodsMoney != null">
+                order_goods_money,
+            </if>
+            <if test="orderGoodsNum != null">
+                order_goods_num,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="orderGoodsId != null">
+                #{orderGoodsId,jdbcType=INTEGER},
+            </if>
+            <if test="orderNo != null">
+                #{orderNo,jdbcType=INTEGER},
+            </if>
+            <if test="cGoodsSn != null">
+                #{cGoodsSn,jdbcType=INTEGER},
+            </if>
+            <if test="orderGoodsIntroduce != null">
+                #{orderGoodsIntroduce,jdbcType=VARCHAR},
+            </if>
+            <if test="orderGoodsDescribe != null">
+                #{orderGoodsDescribe,jdbcType=VARCHAR},
+            </if>
+            <if test="orderGoodsMoney != null">
+                #{orderGoodsMoney,jdbcType=DOUBLE},
+            </if>
+            <if test="orderGoodsNum != null">
+                #{orderGoodsNum,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <insert id="addLogistics" parameterType="com.mr.commont.order.Logistics">
+        insert into t_logistics
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="logiId != null">
+                logi_id,
+            </if>
+            <if test="orderNo != null">
+                order_no,
+            </if>
+            <if test="logiName != null">
+                logi_name,
+            </if>
+            <if test="logiNo != null">
+                logi_no,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="logiId != null">
+                #{logiId,jdbcType=INTEGER},
+            </if>
+            <if test="orderNo != null">
+                #{orderNo,jdbcType=INTEGER},
+            </if>
+            <if test="logiName != null">
+                #{logiName,jdbcType=VARCHAR},
+            </if>
+            <if test="logiNo != null">
+                #{logiNo,jdbcType=VARCHAR},
+            </if>
+        </trim>
+
+    </insert>
+
 </mapper>

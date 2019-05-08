@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -28,8 +29,8 @@ public class OrderController {
     }
 
     @PostMapping("addOrder")
-    public void addOrder(OrderGoodsVo orderGoodsVo){
-
+    public void addOrder(OrderGoodsVo orderGoodsVo, HttpServletRequest request){
+        orderService.addOrder(orderGoodsVo,request);
     }
 
 }
