@@ -64,5 +64,14 @@ public class BuyController {
         mv.setViewName("/index");
         return mv;
     }
-
+    /*商品结算页面*/
+    @RequestMapping("puy")
+    public ModelAndView puyPage(){
+        //ModelAndView mv = new ModelAndView();
+        //调用个人管理中心收货地址的查询接口
+        //调用后台管理物流的查询
+        //调用提供者提供的查询商品的详情（包含优惠券）
+        mv.setViewName("/buy/settle");
+        return mv;
+    }
 }
