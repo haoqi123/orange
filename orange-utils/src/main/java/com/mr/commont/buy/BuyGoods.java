@@ -11,6 +11,12 @@ import java.util.Date;
 @Data
 public class BuyGoods {
 
+    //商品主键
+    private String commodityId;
+
+    //类目id
+    private Integer gtId;
+
     //商品编号
     private Integer goodsSn;
 
@@ -23,7 +29,7 @@ public class BuyGoods {
     //配送方式(0:包邮，1：不包邮)
     //private Integer baoyu;
 
-    //收货地址
+    //收货地址(在订单介绍表加上地址的id作为外键)
     private Integer addressId;
 
     //优惠券id

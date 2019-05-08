@@ -11,8 +11,11 @@ public class BuyVo {
     //商品编号
     private Integer goodsSn;
 
-    //商品描述
+    //商品介绍
     private String goodsInt;
+
+    //商品描述
+    private String goodsDes;
 
     //商品价格
     private Double goodsMoney;
