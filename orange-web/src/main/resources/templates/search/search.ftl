@@ -6,15 +6,15 @@
 
 		<title>搜索页面</title>
 
-		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
-		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
+		<link href="/AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css" />
+		<link href="/AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css" />
 
-		<link href="../basic/css/demo.css" rel="stylesheet" type="text/css" />
+		<link href="/basic/css/demo.css" rel="stylesheet" type="text/css" />
 
-		<link href="../css/seastyle.css" rel="stylesheet" type="text/css" />
+		<link href="/css/seastyle.css" rel="stylesheet" type="text/css" />
 
-		<script type="text/javascript" src="../basic/js/jquery-1.7.min.js"></script>
-		<script type="text/javascript" src="../js/script.js"></script>
+		<script type="text/javascript" src="/basic/js/jquery-1.7.min.js"></script>
+		<script type="text/javascript" src="/js/script.js"></script>
 	</head>
 
 	<body>
@@ -148,8 +148,8 @@
 								<ul class="am-avg-sm-2 am-avg-md-3 am-avg-lg-4 boxes">
 									<#list result.commoditieList as item1>
 										<li>
-											<div class="i-pic limit" onclick="onSearchFormClick(${item1.goodsSn!""})">
-												<img src="images/imgsearch1.jpg" />
+											<div class="i-pic limit">
+												<a href="http://localhost:8765/search/selectById?id=${item1.goodsSn}"><img src="/images/imgsearch1.jpg" /></a>
 												<p class="title fl">${item1.name!"网络繁忙"}</p>
 												<p class="price fl">
 													<b>¥</b>
@@ -379,7 +379,7 @@
 
 		<script>
             function onSearchFormClick(id) {
-                localhost.href="http://";
+                localhost.href="http://localhost:8765/search/selectById?id="+id;
             }
 		</script>
 	</body>

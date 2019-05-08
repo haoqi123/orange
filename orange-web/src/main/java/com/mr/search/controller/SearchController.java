@@ -34,8 +34,8 @@ public class SearchController {
     }
 
     @RequestMapping(value = "selectById",method= RequestMethod.GET)
-    public ModelAndView selectById(@RequestParam("id") Integer id){
-        String s = service.SelectId(id);
+    public ModelAndView selectById(@RequestParam("id") String id){
+        String s = service.SelectId(Integer.parseInt(id.replace(",","")));
         SearchCommodityVO searchCommodityVO = JSONObject.parseObject(s, SearchCommodityVO.class);
         System.err.println(searchCommodityVO);
         ModelAndView modelAndView = new ModelAndView();
