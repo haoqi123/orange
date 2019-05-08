@@ -15,21 +15,7 @@
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
-        <div class="layui-logo">layui 后台布局</div>
-        <!-- 头部区域（可配合layui已有的水平导航） -->
-        <ul class="layui-nav layui-layout-left">
-            <li class="layui-nav-item"><a href="">控制台</a></li>
-            <li class="layui-nav-item"><a href="">商品管理</a></li>
-            <li class="layui-nav-item"><a href="">用户</a></li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">其它系统</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">邮件管理</a></dd>
-                    <dd><a href="">消息管理</a></dd>
-                    <dd><a href="">授权管理</a></dd>
-                </dl>
-            </li>
-        </ul>
+        <div class="layui-logo">orange内部管理</div>
     </div>
 
     <div class="layui-side layui-bg-black">
@@ -37,31 +23,68 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree"  lay-filter="test">
                 <li class="layui-nav-item layui-nav-itemed">
-                    <a class="" href="javascript:;">所有商品</a>
+                    <a class="" href="javascript:;">首页</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">用户管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="javascript:;">列表三</a></dd>
-                        <dd><a href="">超链接</a></dd>
+                        <dd><a href="javascript:;">会员管理</a></dd>
+                        <dd><a href="javascript:;">收货地址</a></dd>
+                        <dd><a href="">会员足迹</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;">解决方案</a>
+                    <a href="javascript:;">商场管理</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="">超链接</a></dd>
+                        <dd><a href="javascript:;">行政区域</a></dd>
+                        <dd><a href="javascript:;">商品类别</a></dd>
+                        <dd><a href="">订单管理</a></dd>
                     </dl>
                 </li>
-                <li class="layui-nav-item"><a href="">云市场</a></li>
-                <li class="layui-nav-item"><a href="">发布商品</a></li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">商品管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">商品列表</a></dd>
+                        <dd><a href="javascript:;">商品评价</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">推广管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a class="site-demo-active" data-type="tabAddYouhuiquan">优惠券管理</a></dd>
+                        <dd><a class="site-demo-active" data-type="tabAddMiaosha">秒杀活动</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">系统管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">操作记录</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">配置管理</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">运费管理</a></dd>
+                        <dd><a href="javascript:;">订单配置</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">统计报表</a>
+                </li>
             </ul>
         </div>
     </div>
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <div style="padding: 15px;">内容主体区域</div>
+        <div class="layui-tab" lay-filter="demo" lay-allowclose="true">
+            <ul class="layui-tab-title">
+                <li class="layui-this" lay-id="11">网站设置</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">内容1</div>
+            </div>
+        </div>
     </div>
 
     <div class="layui-footer">
@@ -70,9 +93,51 @@
     </div>
 </div>
 <script>
-    //JavaScript代码区域
     layui.use('element', function(){
-        var element = layui.element;
+        var $ = layui.jquery
+                ,element = layui.element; //Tab的切换功能，切换事件监听等，需要依赖element模块
+
+        //触发事件
+        var active = {
+            tabAddYouhuiquan: function(){
+                var exist=$("li[lay-id='701']").length;
+                if(exist==0){
+                    //新增一个Tab项
+                    element.tabAdd('demo', {
+                        title: '优惠券' //用于演示
+                        ,content: "<iframe src='"+'/PromoteController/couponsFtl'+"' style='width: 100%;height: 78%'></iframe>"
+                        ,id: 701 //实际使用一般是规定好的id，这里以时间戳模拟下
+                    });
+                }
+                element.tabChange('demo', '701');
+            }
+            ,tabAddMiaosha: function(){
+                var exist=$("li[lay-id='702']").length;
+                if(exist==0) {
+                    //新增一个Tab项
+                    element.tabAdd('demo', {
+                        title: '秒杀' //用于演示
+                        , content: "<iframe src='"+'/PromoteController/killFtl'+"' style='width: 100%;height: 78%'></iframe>"
+                        , id: 702 //实际使用一般是规定好的id，这里以时间戳模拟下
+                    });
+                }
+                element.tabChange('demo', '702');
+            }
+
+        };
+
+        $('.site-demo-active').on('click', function(){
+            var othis = $(this), type = othis.data('type');
+            active[type] ? active[type].call(this, othis) : '';
+        });
+
+        //Hash地址的定位
+        var layid = location.hash.replace(/^#test=/, '');
+        element.tabChange('test', layid);
+
+        element.on('tab(test)', function(elem){
+            location.hash = 'test='+ $(this).attr('lay-id');
+        });
 
     });
 </script>
