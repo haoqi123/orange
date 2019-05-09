@@ -9,19 +9,41 @@
         com.c_goods_sn goodsSn,
         com.c_name 'name',
         com.c_counter_price counterPrice,
-        com.c_retail_price retailPrice,
-        com.c_is_hot isHot,
-        com.c_is_new isNew,
-        com.c_is_on_sale isOnSale,
-        com.c_keywords keywords,
-        com.c_unit unit,
-        com.c_brief brief,
-        com.c_number 'number',
-        pic.pic_url picUrl,
-        pic.pic_type picType
+        com.c_retail_price goodsMoney,
+        com.c_brief goodsInt
         FROM t_commodity com
-        LEFT JOIN t_pic pic ON com.c_goods_sn=pic.c_goods_sn
-        WHERE com.c_goods_sn = #{id}
+        WHERE com.c_goods_sn = #{goId}
+    </select>
+
+    <!--查询个人账户的优惠券信息-->
+    <select id="queryCoupopn" resultType="com.mr.commont.buy.Coupopn">
+        SELECT u.user_status userStatus,
+        uq.userquan_status userquanStatus,
+        quan.q_id qId,
+        quan.q_status qStatus,
+        quan.q_createTime qCreateTime,
+        quan.q_endTime qEndTime,
+        quan.q_about qAbout,
+        quan.q_discount qDiscount,
+        quan.q_min qMin
+        FROM t_userquan uq
+        LEFT JOIN t_user u ON u.user_id=uq.user_id
+        LEFT JOIN t_quan quan ON quan.q_id=uq.q_id
+        WHERE u.user_id = #{goId}
+    </select>
+
+    <!--查询个人的收货地址-->
+    <select id="queryAddress" resultMap="com.mr.commont.buy.Address">
+        SELECT u.user_status userStatus,
+        ad.qu_id quId,
+        ad.us_name usName,
+        ad.us_phone usPhone,
+        ad.us_status usStatus,
+        x.qy_name
+        FROM t_useraddress ad
+        LEFT JOIN t_user u ON u.user_id = ad.user_id
+        LEFT JOIN t_xzqy x ON x.qu_id = ad.qu_id
+        WHERE u.user_id = #{goId}
     </select>
 
 

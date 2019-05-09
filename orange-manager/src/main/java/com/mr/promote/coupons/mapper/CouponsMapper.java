@@ -18,7 +18,7 @@ public interface CouponsMapper {
      * 增加
      * @return
      */
-    int insertCoupons(@Param("coupons") Coupons coupons);
+    int insertCoupons(Coupons coupons);
 
     /**
      * 删除
@@ -30,7 +30,7 @@ public interface CouponsMapper {
      * 修改
      * @return
      */
-    int updateCoupons(@Param("coupons") Coupons coupons);
+    int updateCoupons(Coupons coupons);
 
     /**
      * 根据id查询

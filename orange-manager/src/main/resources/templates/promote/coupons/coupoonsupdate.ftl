@@ -7,7 +7,7 @@
     <script src="/js/jquery-1.11.3.js"></script>
 </head>
 <body>
-<form class="layui-form layui-form-pane" id="couponsAddId">
+<form class="layui-form layui-form-pane" id="couponsUpdateId" lay-filter="couponsUpdate">
     <div class="layui-form-item">
         <label class="layui-form-label">优惠券名称</label>
         <div class="layui-input-block">
@@ -111,6 +111,21 @@
         laydate.render({
             elem: '#date1'
         });
+        //表单初始赋值
+        form.val('couponsUpdate', {
+                "name":${coupons.name}
+                ,"desc":${coupons.desc}
+                ,"tag":${coupons.tag}
+                ,"min":${coupons.min}
+                ,"discount":${coupons.discount}
+                ,"limit":${coupons.limit}
+                ,"about":${coupons.about}
+                ,"type":${coupons.type}
+                ,"status":${coupons.status}
+                ,"createTime":'${coupons.createTime?string('yyyy-MM-dd')}'
+                ,"endTIme":'${coupons.endTIme?string('yyyy-MM-dd')}'
+                ,"number":${coupons.number}
+        })
 
     });
 </script>
