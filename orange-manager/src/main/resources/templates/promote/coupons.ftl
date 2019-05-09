@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
              xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
@@ -81,12 +80,12 @@
                     ,{field: 'id', title: '券编号', width:80}
                     ,{field: 'name', title: '名称', width:80}
                     ,{field: 'desc', title: '介绍', width:80}
-                    ,{field: 'tag', title: '标签', width: 30}
-                    ,{field: 'min', title: '最低消费', width: 117, sort: true}
-                    ,{field: 'discount', title: '满减金额', width: 117, sort: true}
-                    ,{field: 'limit', title: '每人限领', width: 117}
+                    ,{field: 'tag', title: '标签', width: 80}
+                    ,{field: 'min', title: '最低消费', width:100, sort: true}
+                    ,{field: 'discount', title: '满减金额', width: 100, sort: true}
+                    ,{field: 'limit', title: '每人限领', width: 100}
                     ,{field: 'about', title: '商品适用范围', width: 135}
-                    ,{field: 'type', title: '类型', width: 30}
+                    ,{field: 'type', title: '类型', width: 80}
                     ,{field: 'status', title: '状态', width: 80}
                     ,{field: 'createTime', title: '开始时间', width: 135, sort: true}
                     ,{field: 'endTIme', title: '结束时间', width: 135, sort: true}
@@ -107,25 +106,59 @@
             });
 
             //监听行工具事件
-            table.on('tool(couponsTable)', function(obj){
+            table.on('tool(test)', function(obj){
                 var data = obj.data;
+                var str = "id=" +data.id
+                        +"&name=" +data.name
+                        +"&desc="+data.desc
+                        +"&tag="+data.tag
+                        +"&min="+data.min
+                        +"&discount=+"+data.discount
+                        +"&limit="+data.limit
+                        +"&about="+data.about
+                        +"&type="+data.type
+                        +"&status="+data.status
+                        +"&createTime="+data.createTime
+                        +"&endTIme="+data.endTIme
+                        +"&number="+data.number;
                 //console.log(obj)
                 if(obj.event === 'del'){
                     layer.confirm('真的删除行么', function(index){
-                        obj.del();
-                        layer.close(index);
+                        $.get("/CouponsController/deleteCoupons",{"id":data.id},function (data) {
+                            layer.msg(data.msg);
+                            obj.del();
+                            layer.close(index);
+                        })
                     });
                 }else if(obj.event === 'sele'){
                     //查询详情
+                    location.href="http://localhost:8082/PromoteController/couponSeleFtl?"+str;
                 } else if(obj.event === 'edit'){
-                    layer.prompt({
-                        formType: 2
-                        ,value: data.email
-                    }, function(value, index){
-                        obj.update({
-                            email: value
-                        });
-                        layer.close(index);
+                    layer.open({
+                        type: 2
+                        , title: "修改" //不显示标题栏
+                        , closeBtn: false
+                        , area: ['800px', '700px']
+                        , shade: 0.8
+                        , id: 'LAY_layuipro' //设定一个id，防止重复弹出
+                        , btn: ['确定', '取消']
+                        , btnAlign: 'c'
+                        , moveType: 1 //拖拽模式，0或者1
+                        , content: '/PromoteController/couponUpdateFtl?'+str
+                        , yes: function (index, layero) {
+                            var data = {};
+                            var body = layer.getChildFrame('body', index);
+                            var form = body.find("#couponsUpdateId").serializeArray();//获取指定id的表单
+                            $.each(form, function () {
+                                data[this.name] = this.value;
+                            });
+                            var content = data;
+                            $.get("/CouponsController/updateCoupons",content,function (data) {
+                                layer.msg(data.msg);
+                                layer.closeAll();
+                            })
+                            return false;
+                        }
                     });
                 }
             });
@@ -138,21 +171,28 @@
                     //示范一个公告层
                     layer.open({
                         type: 2
-                        , title: false //不显示标题栏
+                        , title: "创建" //不显示标题栏
                         , closeBtn: false
-                        , area: ['600px', '700px']
+                        , area: ['800px', '700px']
                         , shade: 0.8
                         , id: 'LAY_layuipro' //设定一个id，防止重复弹出
                         , btn: ['确定', '取消']
                         , btnAlign: 'c'
                         , moveType: 1 //拖拽模式，0或者1
                         , content: '/PromoteController/couponAddFtl'
-                        , success: function (layero) {
-                                var btn = layero.find('.layui-layer-btn');
-                                btn.find('.layui-layer-btn0').attr({
-                                    href: 'http://www.layui.com/'
-                                    , target: '_blank'
-                                });
+                        , yes: function (index, layero) {
+                            var data = {};
+                            var body = layer.getChildFrame('body', index);
+                            var form = body.find("#couponsAddId").serializeArray();//获取指定id的表单
+                            $.each(form, function () {
+                                data[this.name] = this.value;
+                            });
+                            var content = data;
+                                $.get("/CouponsController/insertCoupons",content,function (data) {
+                                    layer.msg(data.msg);
+                                    layer.closeAll();
+                                })
+                            return false;
                             }
                     });
                 }

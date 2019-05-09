@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by Administer on 2019/5/8.
@@ -29,6 +30,7 @@ public class CouponsServiceImpl implements CouponsService {
      */
     @Override
     public int insertCoupons(Coupons coupons) {
+        coupons.setId(new Random().nextInt(1000)+1000);
         return couponsMapper.insertCoupons(coupons);
     }
 

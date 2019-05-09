@@ -11,6 +11,6 @@ mybatis:
   mapperlocations: classpath*:mapper/*Mapper.xml
 logging:
   level:
-    com.mr.*.mapper: debug
+    com.mr.*.*.mapper: debug
 pagehelper:
   helperDialect: mysql
