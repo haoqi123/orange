@@ -8,6 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient
 @MapperScan("com.mr.order.mapper")
+@MapperScan("com.mr.buy.mapper")
 public class OragneOrderApplication {
 
 	public static void main(String[] args) {

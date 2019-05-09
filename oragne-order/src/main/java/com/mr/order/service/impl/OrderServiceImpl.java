@@ -110,7 +110,6 @@ public class OrderServiceImpl implements OrderService{
             orderMapper.addOrderGoods(orderGoods);
             //生成物流表
             orderMapper.addLogistics(logistics);
-
             //给goodsVo中的订单号赋值返回给前台
             orderGoodsVo.setOrderNo(order.getOrderNo());
             return orderGoodsVo;
