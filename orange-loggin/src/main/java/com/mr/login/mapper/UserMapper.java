@@ -11,7 +11,12 @@ import java.util.List;
  */
 @Mapper
 public interface UserMapper {
+    //注册
     void addUser(User user);
 
+    //登录
     User tologin(UserVo userVo);
+
+    //资料
+    User selectUser(String userName);
 }

@@ -12,9 +12,15 @@ import java.util.List;
  * Created by 师利梅 on 2019/5/6.
  */
 public interface UserService {
+    //z注册
     ResultVo addUser(User user);
 
+    //验证码
     String yanZhengMa(String userName);
 
-    ResultVo tologin(UserVo userVo);
+    //登录
+    ResultVo tologin(UserVo userVo,HttpServletRequest request);
+
+    //资料
+    User selectUser(String userName);
 }

@@ -53,7 +53,7 @@ public class UserServiceImpl implements UserService{
 
     //登录
     @Override
-    public ResultVo tologin(UserVo userVo) {
+    public ResultVo tologin(UserVo userVo,HttpServletRequest request) {
         //判断账号是否正确
         User user = userMapper.tologin(userVo);
         if(user == null){
@@ -62,6 +62,14 @@ public class UserServiceImpl implements UserService{
             //判断密码是否正确
             return ResultVo.error(500,"您的账号或者密码错误！");
         }
+        HttpSession session = request.getSession();
+        session.setAttribute("user",user);
         return ResultVo.success("登陆成功！");
+    }
+
+    //个人资料
+    @Override
+    public User selectUser(String userName) {
+        return userMapper.selectUser(userName);
     }
 }

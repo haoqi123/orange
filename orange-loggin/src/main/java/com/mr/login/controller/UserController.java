@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -45,9 +44,16 @@ public class UserController {
     //登录
     @RequestMapping("tologin")
     @ResponseBody
-    public ResultVo tologin(@RequestBody UserVo userVo){
+    public ResultVo tologin(@RequestBody UserVo userVo,HttpServletRequest request){
         //将数据提交到业务层
-        return userService.tologin(userVo);
+        return userService.tologin(userVo,request);
+    }
+
+    //个人资料
+    @RequestMapping("selectUser/{userName}")
+    @ResponseBody
+    public User selectUser(@PathVariable(value = "userName")String userName){
+        return userService.selectUser(userName);
     }
 
 }

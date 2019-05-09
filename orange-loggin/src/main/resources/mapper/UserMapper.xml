@@ -8,7 +8,13 @@
         (#{userId}, #{userName}, #{userPhone}, #{userSex}, #{userBirthday}, #{userLevel}, #{userStatus})
     </insert>
 
+    <!--登录-->
     <select id="tologin" resultType="com.mr.commont.login.User" parameterType="String">
          select user_id userId, user_name userName, user_phone userPhone from t_user WHERE user_name = #{userName,jdbcType=VARCHAR}
+    </select>
+
+    <!--个人资料-->
+    <select id="selectUser" resultType="com.mr.commont.login.User" parameterType="String">
+        SELECT  user_name userName, user_sex userSex, user_birthday userBirthday, user_level userLevel FROM t_user  WHERE user_name = #{userName,jdbcTy pe=VARCHAR}
     </select>
 </mapper>
