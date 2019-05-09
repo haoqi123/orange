@@ -22,6 +22,9 @@ public class Coupopn {
     //用户id
     private Integer userId;
 
+    //用户的状态（0停用1可用）
+    private Integer userStatus;
+
     //优惠券id
     private Integer qId;
 
@@ -39,4 +42,10 @@ public class Coupopn {
 
     //优惠券使用范围（0：全场通用 1：指定分类（目前不支持）2：指定商品（目前不支持））
     private Integer qAbout;
+
+    //优惠券满减金额
+    private Integer qDiscount;
+
+    //优惠券最低消费
+    private Integer qMin;
 }

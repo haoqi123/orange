@@ -23,14 +23,16 @@ public class Address {
    us_name              varchar(20) not null comment '收货人名称',
    us_phone             varchar(11) not null comment '收货地址手机号',
    us_status            int not null comment '是否默认',*/
-    //地址表主键
-    private Integer usAdId;
 
-    //用户编号
-    private Integer userId;
+
+    //用户的状态（0停用1可用）
+    private Integer userStatus;
 
     //地址编号
     private Integer quId;
+
+    //地址区域名称
+    private String qyName;
 
     //收货人名称
     private String usName;
