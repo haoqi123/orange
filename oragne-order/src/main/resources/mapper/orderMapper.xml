@@ -148,7 +148,13 @@
                 #{logiNo,jdbcType=VARCHAR},
             </if>
         </trim>
-
     </insert>
+
+    <update id="updateOrder" parameterType="string">
+      update t_order SET
+      order_force_time = now(),
+      order_type = 1
+      WHERE order_no = #{orderNo,jdbcType=INTEGER}
+    </update>
 
 </mapper>

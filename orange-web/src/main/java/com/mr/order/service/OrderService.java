@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.ws.rs.POST;
 import java.util.List;
 
 /**
@@ -23,7 +24,11 @@ public interface OrderService {
     @GetMapping("orderList")
     List<OrderGoods> orderGoodsList();
 
-    @PostMapping("addOrder")
-    void addOrder(OrderGoodsVo orderGoodsVo);
+    @GetMapping("addOrder")
+    OrderGoodsVo addOrder(OrderGoodsVo orderGoodsVo);
+
+    @PostMapping("updateOrder")
+    void updateOrderStart(String orderNo);
+
 
 }

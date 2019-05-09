@@ -63,12 +63,13 @@ public class OrderServiceImpl implements OrderService{
     //生成未支付订单
     //修改未支付订单状态
     @Override
-    public void addOrder(OrderGoodsVo orderGoodsVo,HttpServletRequest request) {
+    public OrderGoodsVo addOrder(OrderGoodsVo orderGoodsVo,HttpServletRequest request) {
         //如何保证再次访问这个方法的时候是修改订单状态，如果客户端改变了要购买的商品就需要从新生成一个订单
         //这种情况如何判断
         //判断实体类里的start属性，判断如果有值就是生成一个待支付订单
         //如果没值就是一个修改订单支付状态
-        if(orderGoodsVo.getStart() != null){
+        //前台的start状态传1，并且没有订单号 说明生成一个未支付顶单
+        if (orderGoodsVo.getStart() == 1 && orderGoodsVo.getOrderNo() == null) {
             //随机生成一个订单号
             order.setOrderNo((int) (Math.random() * 999999));
             //给订单总金额赋值
@@ -110,8 +111,20 @@ public class OrderServiceImpl implements OrderService{
             //生成物流表
             orderMapper.addLogistics(logistics);
 
+            //给goodsVo中的订单号赋值返回给前台
+            orderGoodsVo.setOrderNo(order.getOrderNo());
+            return orderGoodsVo;
+            //如果前台start传递的参数是0，订单号不为空那就说明要修改订单位已经支付状态
+        }else{
+            //调用修改方法
+            updateOrderStart(orderGoodsVo.getOrderNo().toString());
+            return orderGoodsVo;
         }
-
-
     }
+    @Override
+    public void updateOrderStart(String orderNo) {
+        orderMapper.updateOrder(orderNo);
+    }
+
+
 }

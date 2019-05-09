@@ -5,6 +5,7 @@ import com.mr.commont.order.OrderGoods;
 import com.mr.commont.order.OrderGoodsVo;
 import com.mr.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,9 +29,14 @@ public class OrderController {
         return orderService.getOrderList();
     }
 
-    @PostMapping("addOrder")
-    public void addOrder(OrderGoodsVo orderGoodsVo, HttpServletRequest request){
-        orderService.addOrder(orderGoodsVo,request);
+    @GetMapping("addOrder")
+    public OrderGoodsVo addOrder(OrderGoodsVo orderGoodsVo, HttpServletRequest request){
+        return orderService.addOrder(orderGoodsVo,request);
+    }
+
+    @PostMapping("updateOrder")
+    public void updateOrderStart(String orderNo){
+        orderService.updateOrderStart(orderNo);
     }
 
 }
