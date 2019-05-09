@@ -28,12 +28,12 @@ public class Order {
     private Date orderGanerationTime;
 
     //付款时间
-    private Date order_force_time;
+    private Date orderForceTime;
 
-    //订单状态
+    //订单状态//0待支付 1已支付
     private Integer orderType;
 
-    //订单是否过时
+    //订单是否过时 0过时 1为过时
     private Integer orderInvalid;
 
 

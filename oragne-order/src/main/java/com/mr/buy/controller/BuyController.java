@@ -1,10 +1,13 @@
 package com.mr.buy.controller;
 
 import com.mr.buy.service.BuyService;
+import com.mr.commont.buy.BuyGoods;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 /**
  * Created by FHJ on 2019/5/6.
@@ -17,10 +20,16 @@ public class BuyController {
     @Autowired
     private BuyService buyService;
 
-    /*查询商品的全部信息*/
-    /*public List queryGoods(){
-        return
-    }*/
+    /*
+    查询商品的全部信息（根据id）和优惠劵
+    */
+    public List<BuyGoods> queryGoods(Integer goId){
+        return buyService.queryGoods(goId);
+    };
+
+    /*查询收货地址*/
+   // public
+    /*查询物流*/
 
 
 
