@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="/js/layui/css/layui.css">
     <script src="/js/layui/layui.js"></script>
     <script src="/js/jquery-1.11.3.js"></script>
-    <script src="/js/jquery.cookie.js"></script>
     <style>
         .layui-tab ul.layui-tab-title li:nth-child(1) i {
             display: none;
@@ -105,7 +104,7 @@
                     //新增一个Tab项
                     element.tabAdd('demo', {
                         title: '优惠券' //用于演示
-                        ,content: "<iframe src='"+'/PromoteController/couponsFtl'+"' style='width: 100%;height: 78%'></iframe>"
+                        ,content: "<iframe src='"+'/PromoteController/couponsFtl'+"' style='width: 100%;height: 89%'></iframe>"
                         ,id: 701 //实际使用一般是规定好的id，这里以时间戳模拟下
                     });
                 }
@@ -117,7 +116,7 @@
                     //新增一个Tab项
                     element.tabAdd('demo', {
                         title: '秒杀' //用于演示
-                        , content: "<iframe src='"+'/PromoteController/killFtl'+"' style='width: 100%;height: 78%'></iframe>"
+                        , content: "<iframe src='"+'/PromoteController/killFtl'+"' style='width: 100%;height: 89%'></iframe>"
                         , id: 702 //实际使用一般是规定好的id，这里以时间戳模拟下
                     });
                 }

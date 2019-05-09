@@ -24,4 +24,11 @@ public class PromoteController {
         modelAndView.setViewName("/promote/kill");
         return modelAndView;
     }
+
+    @RequestMapping("couponAddFtl")
+    public ModelAndView couponAddFtl(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/promote/coupons/coupoonsadd");
+        return modelAndView;
+    }
 }

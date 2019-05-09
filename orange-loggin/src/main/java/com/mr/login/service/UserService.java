@@ -8,4 +8,6 @@ import com.mr.utils.ResultVo;
  */
 public interface UserService {
     ResultVo addUser(User user);
+
+    String yanZhengMa(String userName);
 }

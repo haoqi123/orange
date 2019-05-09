@@ -4,6 +4,7 @@ import com.mr.commont.login.User;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -14,5 +15,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface UserService {
 
     @GetMapping(value = "addUser")
-    String addUser(@RequestParam("user") User user);
+    String addUser(@RequestBody User user);
+
+    @GetMapping(value = "yanZhengMa")
+    String yanZhengMa(@RequestParam("userName") String userName);
 }

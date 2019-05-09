@@ -15,4 +15,5 @@ spring:
     url: jdbc:mysql://localhost:3306/mr_1809?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
       #druid \uFFFD\uFFFD\uFFFD\u077F\uFFFD\uFFFD\uFFFD\uFFFD\u04F3\uFFFD
   #    type: com.alibaba.druid.pool.DruidDataSource
-
+mybatis:
+  mapperlocations: classpath*:mapper/*Mapper.xml
