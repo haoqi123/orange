@@ -41,10 +41,5 @@ public class OrderController {
         return mo;
     }
 
-    //生成订单
-    @PostMapping("addOrder")
-    public void addOrder(OrderGoodsVo orderGoodsVo){
-        orderService.addOrder(orderGoodsVo);
-    }
 
 }

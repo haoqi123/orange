@@ -24,4 +24,7 @@ public interface OrderMapper {
     //生成物流表
     void addLogistics(Logistics logistics);
 
+    //修改订单状态
+    void updateOrder(String orderNo);
+
 }

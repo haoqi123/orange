@@ -5,9 +5,7 @@ import com.mr.commont.order.OrderGoods;
 import com.mr.commont.order.OrderGoodsVo;
 import com.mr.order.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -29,8 +27,15 @@ public class OrderController {
     }
 
     @PostMapping("addOrder")
-    public void addOrder(OrderGoodsVo orderGoodsVo, HttpServletRequest request){
-        orderService.addOrder(orderGoodsVo,request);
+    public OrderGoodsVo addOrder(@RequestBody OrderGoodsVo orderGoodsVo,HttpServletRequest request){
+        System.err.println("run");
+        System.err.println(orderGoodsVo);
+        return orderService.addOrder(orderGoodsVo,request);
+    }
+
+    @PostMapping("updateOrder")
+    public void updateOrderStart(String orderNo){
+        orderService.updateOrderStart(orderNo);
     }
 
 }

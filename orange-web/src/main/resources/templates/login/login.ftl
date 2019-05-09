@@ -31,7 +31,7 @@
                 <form>
                     <div class="user-name">
                         <label for="user"><i class="am-icon-user"></i></label>
-                        <input type="text" name="user" id="user" placeholder="邮箱/手机/用户名">
+                        <input type="text" name="userId" id="userId" placeholder="邮箱/手机/用户名">
                     </div>
                     <div class="user-pass">
                         <label for="password"><i class="am-icon-lock"></i></label>
@@ -88,11 +88,11 @@
 
 
 <<script>
-    function register() {
+    function login() {
         $.ajax({
             type:"post",
             dataType:"json",
-            url:"<%=request.getContextPath()%>/register",
+            url:"<%=request.getContextPath()%>/",
             success:function () {
               alert("success");
             },

@@ -16,6 +16,11 @@ public interface OrderService {
 
 
     //生成订单
-    void addOrder(OrderGoodsVo orderGoodsVo,HttpServletRequest request);
+    OrderGoodsVo addOrder(OrderGoodsVo orderGoodsVo,HttpServletRequest request);
+
+
+    //修改订单状态
+    void updateOrderStart(String orderNo);
+
 
 }

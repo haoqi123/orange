@@ -1,10 +1,16 @@
 package com.mr.promote.coupons.mapper;
 
+import com.mr.commont.promote.coupons.Coupons;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 /**
  * Created by Administer on 2019/5/8.
  */
+@Component
 @Mapper
 public interface CouponsMapper {
 
@@ -12,28 +18,28 @@ public interface CouponsMapper {
      * 增加
      * @return
      */
-    int insertCoupons();
+    int insertCoupons(@Param("coupons") Coupons coupons);
 
     /**
      * 删除
      * @return
      */
-    int deleteCoupons();
+    int deleteCoupons(Integer id);
 
     /**
      * 修改
      * @return
      */
-    int updateCoupons();
+    int updateCoupons(@Param("coupons") Coupons coupons);
 
     /**
      * 根据id查询
      * @param id
      */
-    void selectCouponsById(Integer id);
+    Coupons selectCouponsById(Integer id);
 
     /**
      * 条件查询
      */
-    void selectCouponsList();
+    List<Coupons> selectCouponsList(Coupons coupons);
 }
