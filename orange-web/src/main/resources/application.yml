@@ -9,6 +9,10 @@ spring:
     restart:
       enabled: true
       exclude: WEB-INF
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static/
 eureka:
   client:
     serviceUrl:
