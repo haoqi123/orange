@@ -2,4 +2,93 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mr.promote.coupons.mapper.CouponsMapper">
 
+    <sql id="Base_Column_List">
+        t_quan_id quanId,
+        q_id id,
+        q_name 'name',
+        q_desc 'desc',
+        q_tag tag,
+        q_min 'min',
+        q_discount discount,
+        q_limit 'limit',
+        q_about about,
+        q_type 'type',
+        q_status status,
+        q_createTime createTime,
+        q_endTime endTIme,
+        q_number 'number'
+    </sql>
+
+    <!--条件查询-->
+    <select id="selectCouponsList" resultType="com.mr.commont.promote.coupons.Coupons" parameterType="com.mr.commont.promote.coupons.Coupons">
+      SELECT <include refid="Base_Column_List"/>
+      FROM t_quan
+      <where>
+          <if test="name!=null and name!=''">
+              and q_name LIKE "%"#{name}"%"
+          </if>
+          <if test="type!=null and type!=0">
+              and q_type = #{type}
+          </if>
+          <if test="status!=null and status!=0">
+              and q_status = #{status}
+          </if>
+      </where>
+    </select>
+
+    <!--增加-->
+    <insert id="insertCoupons" parameterType="com.mr.commont.promote.coupons.Coupons">
+        INSERT INTO t_quan(q_id,q_name,q_desc,q_tag,q_min,q_discount,q_limit,q_about,q_type,q_status,q_number)
+        VALUE (#{id},#{name},#{desc},#{tag},#{min},#{discount},#{limit},#{about},#{type},#{status},#{number})
+    </insert>
+
+    <!--删除-->
+    <delete id="deleteCoupons">
+        DELETE FROM t_quan WHERE q_id=#{id}
+    </delete>
+
+    <!--修改-->
+    <update id="updateCoupons" parameterType="com.mr.commont.promote.coupons.Coupons">
+        UPDATE t_quan
+        <set>
+            <if test="name!=null and name!=''">
+                q_name = #{name}
+            </if>
+            <if test="desc!=null and desc!=''">
+                q_desc = #{desc}
+            </if>
+            <if test="tag!=null and tag!=0">
+                q_tag = #{tag}
+            </if>
+            <if test="min!=null and min!=0">
+                q_min = #{min}
+            </if>
+            <if test="discount!=null and discount!=0">
+                q_discount = #{discount}
+            </if>
+            <if test="limit!=null and limit!=0">
+                q_limit = #{limit}
+            </if>
+            <if test="about!=null and about!=0">
+                q_about = #{about}
+            </if>
+            <if test="type!=null and type!=0">
+                q_type = #{type}
+            </if>
+            <if test="status!=null and status!=0">
+                q_status = #{status}
+            </if>
+            <if test="number!=null and number!=0">
+                q_number = #{number}
+            </if>
+        </set>
+        WHERE q_id=#{id}
+    </update>
+
+    <!--根据id查询-->                                                                                                        <!--根据id查询-->
+    <select id="selectCouponsById" resultType="com.mr.commont.promote.coupons.Coupons">
+        SELECT <include refid="Base_Column_List"/>
+        FROM t_quan
+        WHERE q_id=#{id}
+    </select>
 </mapper>

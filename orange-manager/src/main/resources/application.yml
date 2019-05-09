@@ -9,12 +9,8 @@ spring:
         type: com.alibaba.druid.pool.DruidDataSource
 mybatis:
   mapperlocations: classpath*:mapper/*Mapper.xml
-#  #扫面domain包中的实体类并起别名
-#  config-location: classpath:mybatis-config.xml
-#日志级别改为debug可以显示sql语句,logging.level后为存放mapper接口的包
 logging:
   level:
     com.mr.*.mapper: debug
-#pagehelper分页插件配置
 pagehelper:
   helperDialect: mysql
