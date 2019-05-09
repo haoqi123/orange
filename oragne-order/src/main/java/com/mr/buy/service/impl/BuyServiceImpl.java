@@ -28,7 +28,7 @@ public class BuyServiceImpl implements BuyService{
     }
 
     @Override
-    public  Set<Address> selectAddress(Integer goId) {
+    public Set<Address> selectAddress(Integer goId) {
         return buyMapper.queryAddress(goId);
     }
 

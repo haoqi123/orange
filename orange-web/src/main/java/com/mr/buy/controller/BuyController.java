@@ -18,6 +18,16 @@ public class BuyController {
     private BuyService buyService;
 
     ModelAndView mv = new ModelAndView();
+
+    /*查询商品优惠券返回购买页面*/
+    @RequestMapping("queryGoods")
+    public ModelAndView queryGoods(Integer id) {
+        String s = buyService.queryGoods(id);
+        System.out.println(s);
+        mv.addObject("result", s);
+        mv.setViewName("/buy/buy");
+        return mv;
+    }
     /*去商品购买页面*/
     @RequestMapping("buyPage")
     public ModelAndView buyPage(){
