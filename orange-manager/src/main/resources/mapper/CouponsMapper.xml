@@ -38,8 +38,8 @@
 
     <!--增加-->
     <insert id="insertCoupons" parameterType="com.mr.commont.promote.coupons.Coupons">
-        INSERT INTO t_quan(q_id,q_name,q_desc,q_tag,q_min,q_discount,q_limit,q_about,q_type,q_status,q_number)
-        VALUE (#{id},#{name},#{desc},#{tag},#{min},#{discount},#{limit},#{about},#{type},#{status},#{number})
+        INSERT INTO t_quan(q_id,q_name,q_desc,q_tag,q_min,q_discount,q_limit,q_about,q_type,q_number,q_createTime,q_endTIme)
+        VALUE (#{id},#{name},#{desc},#{tag},#{min},#{discount},#{limit},#{about},#{type},#{number},#{createTime},#{endTIme})
     </insert>
 
     <!--删除-->
@@ -91,4 +91,6 @@
         FROM t_quan
         WHERE q_id=#{id}
     </select>
+
+
 </mapper>
