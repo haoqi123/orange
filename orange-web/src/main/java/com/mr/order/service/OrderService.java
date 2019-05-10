@@ -2,11 +2,10 @@ package com.mr.order.service;
 
 import com.mr.commont.order.OrderGoods;
 import com.mr.commont.order.OrderGoodsVo;
+import com.mr.utils.Page;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
-import javax.ws.rs.POST;
 import java.util.List;
 
 /**
@@ -27,5 +26,6 @@ public interface OrderService {
     @PostMapping("updateOrder")
     void updateOrderStart(@RequestParam("orderNo")String orderNo);
 
-
+    @GetMapping("selectOrderSeleList")
+    String selectOrderSeleList(@RequestParam("id")Integer id);
 }

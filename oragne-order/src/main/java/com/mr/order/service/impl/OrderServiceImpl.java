@@ -1,15 +1,11 @@
 package com.mr.order.service.impl;
 
-import com.mr.commont.order.Logistics;
-import com.mr.commont.order.Order;
-import com.mr.commont.order.OrderGoods;
-import com.mr.commont.order.OrderGoodsVo;
+import com.mr.commont.order.*;
 import com.mr.order.mapper.OrderMapper;
 import com.mr.order.service.OrderService;
-import com.mr.utils.SerializeUtil;
+import com.mr.utils.LayResult;
 import net.sf.json.JSONArray;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
 
 /**
  * Created by shangpengyu on 2019/5/6.
@@ -126,4 +121,17 @@ public class OrderServiceImpl implements OrderService{
     }
 
 
+    /**
+     * 订单查询
+     * @param id
+     * @return
+     */
+    @Override
+    public LayResult<OrderSeleVO> selectOrderSeleList(Integer id) {
+        //if (page==null) page = new Page();
+        List<OrderSeleVO> list = orderMapper.selectOrderSeleList(id);
+        Long count = Long.valueOf(list.size());
+        LayResult<OrderSeleVO> layResult = new LayResult<>(0,"",count,list,null);
+        return layResult;
+    }
 }

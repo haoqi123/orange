@@ -1,22 +1,22 @@
 package com.mr.order.controller;
 
-import com.mr.commont.order.OrderGoods;
-import com.mr.commont.order.OrderGoodsVo;
+import com.alibaba.fastjson.JSONObject;
+import com.mr.commont.order.OrderSeleVO;
 import com.mr.order.service.OrderService;
+import com.mr.utils.LayResult;
+import com.mr.utils.Page;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.List;
 
 /**
  * Created by shangpengyu on 2019/5/5.
  */
-@Controller
+@RestController
 public class OrderController {
 
     //订单接口
@@ -29,17 +29,18 @@ public class OrderController {
     }
 
     @GetMapping("orderList")
-    public ModelAndView orderGoods(){
+    public ModelAndView orderGoods(@RequestParam("id") Integer id){
         //new一个ModelAndView对象
         ModelAndView mo = new ModelAndView();
         System.err.println("run");
-        List<OrderGoods> goodsList = orderService.orderGoodsList();
-
+        String string = orderService.selectOrderSeleList(id);
+        LayResult<OrderSeleVO> layResult = JSONObject.parseObject(string, LayResult.class);
         //将数据放入到modelandview
-        mo.addObject("list",goodsList);
-        mo.setViewName("order/order");
+        mo.addObject("list",layResult);
+        mo.setViewName("/order/order");
         return mo;
     }
+
 
 
 }

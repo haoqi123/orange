@@ -157,4 +157,46 @@
       WHERE order_no = #{orderNo,jdbcType=INTEGER}
     </update>
 
+    <!--一对多订单详情信息-->
+    <resultMap id="selectOrderSeleListMap" type="com.mr.commont.order.OrderSeleVO">
+        <id property="orderNo" column="orderNo"/>
+        <result column="orderForceTime" property="orderForceTime"/>
+        <result column="userId" property="userId"/>
+        <result column="type" property="type"/>
+        <result column="invaslid" property="invaslid"/>
+        <result column="orderMoney" property="orderMoney"/>
+
+        <collection property="orderSeleGoodsVOList" ofType="com.mr.commont.order.OrderSeleGoodsVO">
+            <id property="id" column="order_goods_id"/>
+            <result column="commodityName" property="commodityName"/>
+            <result column="orderGoodsIntroduce" property="orderGoodsIntroduce"/>
+            <result column="orderGoodsDescribe" property="orderGoodsDescribe"/>
+            <result column="orderGoodsMoney" property="orderGoodsMoney"/>
+            <result column="goodsNum" property="goodsNum"/>
+        </collection>
+
+    </resultMap>
+
+    <!--订单查询-->
+    <select id="selectOrderSeleList" resultMap="selectOrderSeleListMap">
+        SELECT
+            torder.order_no AS orderNo,
+            torder.order_force_time AS orderForceTime,
+            torder.user_id AS userId,
+            torder.order_type AS 'type',
+            torder.order_Invalid AS invaslid,
+            torder.order_money AS orderMoney,
+            commodity.c_name AS commodityName,
+            ordergoods.order_goods_introduce AS orderGoodsIntroduce,
+            ordergoods.order_goods_describe AS orderGoodsDescribe,
+            ordergoods.order_goods_money AS orderGoodsMoney,
+            ordergoods.order_goods_num AS goodsNum,
+            ordergoods.order_goods_id
+        FROM
+        t_order AS torder
+        INNER JOIN t_order_goods AS ordergoods ON ordergoods.order_no = torder.order_no
+        INNER JOIN t_commodity AS commodity ON ordergoods.c_goods_sn = commodity.c_goods_sn
+        WHERE torder.user_id=#{id}
+    </select>
+
 </mapper>

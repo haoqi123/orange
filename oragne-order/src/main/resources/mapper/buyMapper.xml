@@ -33,7 +33,7 @@
     </select>
 
     <!--查询个人的收货地址-->
-    <select id="queryAddress" resultMap="com.mr.commont.buy.Address">
+    <select id="queryAddress" resultType="com.mr.commont.buy.Address">
         SELECT u.user_status userStatus,
         ad.qu_id quId,
         ad.us_name usName,

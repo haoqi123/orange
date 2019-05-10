@@ -1,9 +1,13 @@
 package com.mr.order.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.mr.commont.order.Order;
 import com.mr.commont.order.OrderGoods;
 import com.mr.commont.order.OrderGoodsVo;
+import com.mr.commont.order.OrderSeleVO;
 import com.mr.order.service.OrderService;
+import com.mr.utils.LayResult;
+import com.mr.utils.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
@@ -38,4 +42,15 @@ public class OrderController {
         orderService.updateOrderStart(orderNo);
     }
 
+    /**
+     * 条件查询
+     * @param id
+     * @return
+     */
+    @RequestMapping("selectOrderSeleList")
+    public String selectOrderSeleList(@RequestParam("id") Integer id) {
+        LayResult<OrderSeleVO> layResult = orderService.selectOrderSeleList(id);
+        String string = JSONObject.toJSONString(layResult);
+        return string;
+    }
 }

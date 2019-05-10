@@ -3,6 +3,7 @@ package com.mr.order.mapper;
 import com.mr.commont.order.Logistics;
 import com.mr.commont.order.Order;
 import com.mr.commont.order.OrderGoods;
+import com.mr.commont.order.OrderSeleVO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -26,5 +27,12 @@ public interface OrderMapper {
 
     //修改订单状态
     void updateOrder(String orderNo);
+
+    /**
+     * 根据用户id查询订单
+     * @param id
+     * @return
+     */
+    List<OrderSeleVO> selectOrderSeleList(Integer id);
 
 }
