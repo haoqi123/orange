@@ -33,13 +33,13 @@ public class BuyController {
 
         //查询商品的全部信息（根据id）
         List<BuyGoods>buyGoodsList = buyService.selectGoods(id);
-
+        System.out.println(buyGoodsList);
         //查询收货地址
         List<Coupopn>coupopnsList =buyService.selectCoupon(id);
-
+        System.out.println(coupopnsList);
         //查询物流
         Set<Address> addressSet = buyService.selectAddress(id);
-
+        System.out.println(addressSet);
         BuyResult buyResult = new BuyResult();
         buyResult.setAddressSet(addressSet);
         buyResult.setBuyGoodsList(buyGoodsList);
