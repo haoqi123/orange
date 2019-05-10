@@ -25,7 +25,7 @@ public class BuyController {
         String s = buyService.queryGoods(id);
         System.out.println(s);
         mv.addObject("result", s);
-        mv.setViewName("/buy/buy");
+        mv.setViewName("/buy/settle");
         return mv;
     }
     /*去商品购买页面*/
