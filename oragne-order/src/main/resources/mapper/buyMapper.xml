@@ -42,7 +42,7 @@
         x.qy_name
         FROM t_useraddress ad
         LEFT JOIN t_user u ON u.user_id = ad.user_id
-        LEFT JOIN t_xzqy x ON x.qu_id = ad.qu_id
+        LEFT JOIN t_xzqy x ON x.qy_id = ad.qu_id
         WHERE u.user_id = #{goId}
     </select>
 

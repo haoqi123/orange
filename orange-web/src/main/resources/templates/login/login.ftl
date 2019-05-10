@@ -11,16 +11,18 @@
 
     <link rel="stylesheet" href="AmazeUI-2.4.2/assets/css/amazeui.css" />
     <link href="css/dlstyle.css" rel="stylesheet" type="text/css">
+    <script src="AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+    <script src="AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
 </head>
 <body>
 
 <div class="login-boxtitle">
-    <a href="home.html"><img alt="logo" src="/images/logobig.png" /></a>
+    <a href="home.html"><img alt="logo" src="images/logobig.png" /></a>
 </div>
 
 <div class="login-banner">
     <div class="login-main">
-        <div class="login-banner-bg"><span></span><img src="/images/big.jpg" /></div>
+        <div class="login-banner-bg"><span></span><img src="images/big.jpg" /></div>
         <div class="login-box">
 
             <h3 class="title">登录商城</h3>
@@ -31,11 +33,11 @@
                 <form>
                     <div class="user-name">
                         <label for="user"><i class="am-icon-user"></i></label>
-                        <input type="text" name="userId" id="userId" placeholder="邮箱/手机/用户名">
+                        <input type="text"  onblur="testName()" name="userName" id="user" placeholder="邮箱/手机/用户名">
                     </div>
                     <div class="user-pass">
                         <label for="password"><i class="am-icon-lock"></i></label>
-                        <input type="password" name="password" id="password" placeholder="请输入密码">
+                        <input type="password" name="userPhone" id="password" placeholder="请输入密码">
                     </div>
                 </form>
             </div>
@@ -47,7 +49,7 @@
                 <br />
             </div>
             <div class="am-cf">
-                <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm">
+                <input type="button" name="" onclick="login()" value="登 录" class="am-btn am-btn-primary am-btn-sm">
             </div>
             <div class="partner">
                 <h3>合作账号</h3>
@@ -88,16 +90,53 @@
 
 
 <<script>
+
+    function testName(){
+        var name = $("#user").val();
+        //判断不是空数据
+        if(name == null){
+            return;
+        }
+        //判断正则
+        var phoneTest = /^1\d{10}$/;
+        if(!phoneTest.test(name)){
+            fals = false;
+            $.messager.alert('您的账号格式错误！');
+            return;
+        }else{
+            fals=true;
+        }
+    }
     function login() {
+        testName();
+        if(!fals){
+            return;
+        }
+        var name = $('#user').val();
+        var pass = $('#password').val();
+        //判断密码不为空
+        if(pass == null && pass ==''){
+            return;
+        }
+        if(name == null && name ==''){
+            return;
+        }
         $.ajax({
-            type:"post",
-            dataType:"json",
-            url:"<%=request.getContextPath()%>/",
-            success:function () {
-              alert("success");
+            type:'get',
+            url:'/tologin',
+            data:{'userName':name,'userPhone':pass},
+            dataType:'json',
+            async:false,
+            success:function(data){
+                alert(data);
+                if(data.code==500 || data.code == 501){
+                    $.messager.alert('您的账号或者密码错误！');
+                }else{
+                    location.href="../index";
+                }
             },
-            error:function () {
-                alert( "系统错误");
+            error:function(){
+                $.messager.alert('系统错误！');
             }
         });
     }
