@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/orangetest?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+        url: jdbc:mysql://62.234.49.33:3306/haoqi?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
         username: root
         password: 7777
         type: com.alibaba.druid.pool.DruidDataSource

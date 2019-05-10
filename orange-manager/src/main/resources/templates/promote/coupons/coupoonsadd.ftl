@@ -106,10 +106,8 @@
 
         //日期
         laydate.render({
-            elem: '#date'
-        });
-        laydate.render({
             elem: '#date1'
+            ,type: 'datetime'
         });
 
     });

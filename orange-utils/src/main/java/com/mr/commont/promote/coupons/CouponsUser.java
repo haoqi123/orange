@@ -21,8 +21,8 @@ public class CouponsUser {
     private Integer userId;//用户Id
     private Integer quanId;//优惠券Id
     private Integer quanStatus;//使用状态
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Timestamp addTime;//领取时间
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Timestamp updateTime;//使用时间
 }

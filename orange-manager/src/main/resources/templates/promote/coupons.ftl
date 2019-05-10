@@ -72,7 +72,6 @@
             //第一个实例
             table.render({
                 elem: '#couponsTable'
-                ,height: 312
                 ,url: '/CouponsController/selectCouponsList' //数据接口
                 ,page: true //开启分页
                 ,cols: [[ //表头

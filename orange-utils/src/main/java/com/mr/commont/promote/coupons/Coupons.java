@@ -29,9 +29,9 @@ public class Coupons {
     private Integer about;//'商品使用范围',
     private Integer type; // '优惠券类型',
     private Integer status;//'状态',
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;  // '开始时间',
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date endTIme;  //'结束时间',
     private Integer number; //'优惠券数量',
 }
